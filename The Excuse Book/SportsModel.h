@@ -14,12 +14,14 @@
 @property (nonatomic, copy) NSString *sportName;
 
 // Get a list of sports: ID and Name
+-(NSArray*)GetSportsAndIDs;
 
 // get just the sport name from the defaultID
+-(NSString*)GetOneSportName:(NSString*)sportID;
 
 //add a sport (and 1 excuse at the same time)
 // here we need to get the ID back, I think the apple database automatically does it
 // so we don't need a seperate method
-
+-(BOOL)AddNewSport:(NSString*)sportName;
 
 @end
