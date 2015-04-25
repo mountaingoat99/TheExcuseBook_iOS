@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SportsModel : NSObject
+@interface SportsModel : NSObject <NSCoding>
+
+@property (nonatomic, copy) NSString *sportID;
+@property (nonatomic, copy) NSString *sportName;
+
+// Get a list of sports: ID and Name
+
+// get just the sport name from the defaultID
+
+//add a sport (and 1 excuse at the same time)
+// here we need to get the ID back, I think the apple database automatically does it
+// so we don't need a seperate method
+
 
 @end

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ExcuseModel : NSObject
+@interface ExcuseModel : NSObject <NSCoding>
+
+@property (nonatomic, copy) NSString *sportID;
+@property (nonatomic, copy) NSString *excuseName;
+
+// method to get an array of excuse to send to the excuse controller
+
+// method to add an excuse by sport
 
 @end

@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DefaultModel : NSObject
+@interface DefaultModel : NSObject <NSCoding>
+
+@property (nonatomic, copy) NSString *defaultSportId;
+
+// do a single select to check the default Sport ID
+-(NSString*)CheckDefaultID;
+
+// Update the default sport
+-(BOOL)UpdateDefaultSport:(NSString*)sportid;
 
 @end
