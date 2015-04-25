@@ -13,13 +13,21 @@
 		268DDAB31AE3F12700948E93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB11AE3F12700948E93 /* Interface.storyboard */; };
 		268DDAB51AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB41AE3F12700948E93 /* Images.xcassets */; };
 		268DDAB81AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */; };
 		26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADA1AE3EF8A009F4229 /* main.m */; };
 		26DA4ADE1AE3EF8A009F4229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */; };
-		26DA4AE11AE3EF8A009F4229 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4AE01AE3EF8A009F4229 /* ViewController.m */; };
+		26DA4AE11AE3EF8A009F4229 /* ExcuseMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4AE01AE3EF8A009F4229 /* ExcuseMeView.m */; };
 		26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE21AE3EF8A009F4229 /* Main.storyboard */; };
 		26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE51AE3EF8A009F4229 /* Images.xcassets */; };
 		26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */; };
 		26DA4AF51AE3EF8A009F4229 /* The_Excuse_BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4AF41AE3EF8A009F4229 /* The_Excuse_BookTests.m */; };
+		26EFCF371AEC1FE400992828 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF361AEC1FE400992828 /* DBManager.m */; };
+		26EFCF3A1AEC216A00992828 /* DefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF391AEC216A00992828 /* DefaultModel.m */; };
+		26EFCF3D1AEC218300992828 /* ExcuseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3C1AEC218300992828 /* ExcuseModel.m */; };
+		26EFCF401AEC219700992828 /* SportsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3F1AEC219700992828 /* SportsModel.m */; };
+		26EFCF431AEC21A900992828 /* DefaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF421AEC21A900992828 /* DefaultController.m */; };
+		26EFCF461AEC21B800992828 /* Excuse Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF451AEC21B800992828 /* Excuse Controller.m */; };
+		26EFCF491AEC22AF00992828 /* ShowExcuseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF481AEC22AF00992828 /* ShowExcuseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,19 +78,35 @@
 		268DDAB01AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268DDAB21AE3F12700948E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		268DDAB41AE3F12700948E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		26A67C171AEBFB2100A3C350 /* excuse_book.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = excuse_book.db; path = ../TheExcuseBookMediaData/excuse_book.db; sourceTree = "<group>"; };
 		26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA4AD91AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DA4ADA1AE3EF8A009F4229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26DA4ADC1AE3EF8A009F4229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26DA4ADF1AE3EF8A009F4229 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26DA4AE01AE3EF8A009F4229 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26DA4ADF1AE3EF8A009F4229 /* ExcuseMeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcuseMeView.h; sourceTree = "<group>"; };
+		26DA4AE01AE3EF8A009F4229 /* ExcuseMeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcuseMeView.m; sourceTree = "<group>"; };
 		26DA4AE31AE3EF8A009F4229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26DA4AE51AE3EF8A009F4229 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26DA4AE81AE3EF8A009F4229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26DA4AEE1AE3EF8A009F4229 /* The Excuse BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Excuse BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA4AF31AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DA4AF41AE3EF8A009F4229 /* The_Excuse_BookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Excuse_BookTests.m; sourceTree = "<group>"; };
+		26EFCF351AEC1FE400992828 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		26EFCF361AEC1FE400992828 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		26EFCF381AEC216A00992828 /* DefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultModel.h; sourceTree = "<group>"; };
+		26EFCF391AEC216A00992828 /* DefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultModel.m; sourceTree = "<group>"; };
+		26EFCF3B1AEC218300992828 /* ExcuseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcuseModel.h; sourceTree = "<group>"; };
+		26EFCF3C1AEC218300992828 /* ExcuseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcuseModel.m; sourceTree = "<group>"; };
+		26EFCF3E1AEC219700992828 /* SportsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsModel.h; sourceTree = "<group>"; };
+		26EFCF3F1AEC219700992828 /* SportsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsModel.m; sourceTree = "<group>"; };
+		26EFCF411AEC21A900992828 /* DefaultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultController.h; sourceTree = "<group>"; };
+		26EFCF421AEC21A900992828 /* DefaultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultController.m; sourceTree = "<group>"; };
+		26EFCF441AEC21B800992828 /* Excuse Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Excuse Controller.h"; sourceTree = "<group>"; };
+		26EFCF451AEC21B800992828 /* Excuse Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Excuse Controller.m"; sourceTree = "<group>"; };
+		26EFCF471AEC22AF00992828 /* ShowExcuseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowExcuseView.h; sourceTree = "<group>"; };
+		26EFCF481AEC22AF00992828 /* ShowExcuseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowExcuseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +175,8 @@
 		26DA4ACC1AE3EF8A009F4229 = {
 			isa = PBXGroup;
 			children = (
+				26A67C171AEBFB2100A3C350 /* excuse_book.db */,
+				26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */,
 				26DA4AD71AE3EF8A009F4229 /* The Excuse Book */,
 				26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */,
 				268DDAA01AE3F12700948E93 /* The Excuse Book WatchKit Extension */,
@@ -172,13 +199,11 @@
 		26DA4AD71AE3EF8A009F4229 /* The Excuse Book */ = {
 			isa = PBXGroup;
 			children = (
-				26DA4ADC1AE3EF8A009F4229 /* AppDelegate.h */,
-				26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */,
-				26DA4ADF1AE3EF8A009F4229 /* ViewController.h */,
-				26DA4AE01AE3EF8A009F4229 /* ViewController.m */,
-				26DA4AE21AE3EF8A009F4229 /* Main.storyboard */,
-				26DA4AE51AE3EF8A009F4229 /* Images.xcassets */,
-				26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */,
+				26EFCF341AEC1F8500992828 /* Controllers */,
+				26EFCF331AEC1F6300992828 /* Model */,
+				26EFCF321AEC1F3C00992828 /* UI */,
+				26EFCF311AEC1F2500992828 /* ViewControllers */,
+				26EFCF301AEC1EFE00992828 /* Supporting Files */,
 				26DA4AD81AE3EF8A009F4229 /* Supporting Files */,
 			);
 			path = "The Excuse Book";
@@ -208,6 +233,62 @@
 				26DA4AF31AE3EF8A009F4229 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26EFCF301AEC1EFE00992828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26DA4ADC1AE3EF8A009F4229 /* AppDelegate.h */,
+				26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26EFCF311AEC1F2500992828 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26DA4ADF1AE3EF8A009F4229 /* ExcuseMeView.h */,
+				26DA4AE01AE3EF8A009F4229 /* ExcuseMeView.m */,
+				26EFCF471AEC22AF00992828 /* ShowExcuseView.h */,
+				26EFCF481AEC22AF00992828 /* ShowExcuseView.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		26EFCF321AEC1F3C00992828 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				26DA4AE21AE3EF8A009F4229 /* Main.storyboard */,
+				26DA4AE51AE3EF8A009F4229 /* Images.xcassets */,
+				26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		26EFCF331AEC1F6300992828 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26EFCF351AEC1FE400992828 /* DBManager.h */,
+				26EFCF361AEC1FE400992828 /* DBManager.m */,
+				26EFCF381AEC216A00992828 /* DefaultModel.h */,
+				26EFCF391AEC216A00992828 /* DefaultModel.m */,
+				26EFCF3B1AEC218300992828 /* ExcuseModel.h */,
+				26EFCF3C1AEC218300992828 /* ExcuseModel.m */,
+				26EFCF3E1AEC219700992828 /* SportsModel.h */,
+				26EFCF3F1AEC219700992828 /* SportsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		26EFCF341AEC1F8500992828 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26EFCF411AEC21A900992828 /* DefaultController.h */,
+				26EFCF421AEC21A900992828 /* DefaultController.m */,
+				26EFCF441AEC21B800992828 /* Excuse Controller.h */,
+				26EFCF451AEC21B800992828 /* Excuse Controller.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,9 +460,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DA4AE11AE3EF8A009F4229 /* ViewController.m in Sources */,
+				26EFCF401AEC219700992828 /* SportsModel.m in Sources */,
+				26EFCF3D1AEC218300992828 /* ExcuseModel.m in Sources */,
+				26DA4AE11AE3EF8A009F4229 /* ExcuseMeView.m in Sources */,
 				26DA4ADE1AE3EF8A009F4229 /* AppDelegate.m in Sources */,
+				26EFCF461AEC21B800992828 /* Excuse Controller.m in Sources */,
+				26EFCF3A1AEC216A00992828 /* DefaultModel.m in Sources */,
+				26EFCF491AEC22AF00992828 /* ShowExcuseView.m in Sources */,
 				26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */,
+				26EFCF371AEC1FE400992828 /* DBManager.m in Sources */,
+				26EFCF431AEC21A900992828 /* DefaultController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +731,7 @@
 				268DDABC1AE3F12700948E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		268DDABE1AE3F12700948E93 /* Build configuration list for PBXNativeTarget "The Excuse Book WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +740,7 @@
 				268DDABA1AE3F12700948E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26DA4AD01AE3EF8A009F4229 /* Build configuration list for PBXProject "The Excuse Book" */ = {
 			isa = XCConfigurationList;

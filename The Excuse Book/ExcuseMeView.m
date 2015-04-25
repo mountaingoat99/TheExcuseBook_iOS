@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 SingleCog Software. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ExcuseMeView.h"
 
-@interface ViewController ()
+@interface ExcuseMeView ()
 
 @end
 
-@implementation ViewController
+@implementation ExcuseMeView
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ShowExcuseView.h
 //  The Excuse Book
 //
-//  Created by Jeremey Rodriguez on 4/19/15.
+//  Created by Jeremey Rodriguez on 4/25/15.
 //  Copyright (c) 2015 SingleCog Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ShowExcuseView : UIViewController
 
 @end
-
