@@ -14,7 +14,9 @@
 @property (nonatomic, copy) NSString *excuseName;
 
 // method to get an array of excuse to send to the excuse controller
+-(NSArray*)GetExcuseListBySport:(NSString*)sportId;
 
 // method to add an excuse by sport
+-(BOOL)AddNewExcuse:(NSString*)excuseText SportID:(NSString*)sportId;
 
 @end
