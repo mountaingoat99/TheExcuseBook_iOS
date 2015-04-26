@@ -34,9 +34,17 @@
 }
 
 // Get a list of sports: ID and Name
-//-(NSArray*)GetSportsAndIDs {
-//    
-//}
+-(NSArray*)GetSportsAndIDs {
+    
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    
+    NSString *query = @"select * from sports";
+    
+    NSArray *sports = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
+    
+    return sports;
+    
+}
 
 // get just the sport name from the defaultID
 -(NSString*)GetOneSportName:(NSString*)sportID {
