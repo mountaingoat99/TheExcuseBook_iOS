@@ -40,9 +40,19 @@
     
     self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
     
-    NSString *query = [NSString stringWithFormat:@"select excuse_name from excuses where sport_id=%@", sportId];
+    NSString *query = [NSString stringWithFormat:@"select id from excuses where sport_id=%@", sportId];
     
     return excuses = [self.dbManager loadDataFromDB:query];
+}
+
+-(NSString*)GetExcuseName:(NSString*)excuseId {
+    
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    
+    NSString *query = [NSString stringWithFormat:@"select excuse_name from excuses where id=%@", excuseId];
+    
+    return [self.dbManager loadOneDataFromDB:query];
+    
 }
 
 // method to add an excuse by sport

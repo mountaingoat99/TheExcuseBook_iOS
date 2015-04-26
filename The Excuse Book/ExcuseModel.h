@@ -16,6 +16,8 @@
 // method to get an array of excuse to send to the excuse controller
 -(NSArray*)GetExcuseListBySport:(NSString*)sportId;
 
+-(NSString*)GetExcuseName:(NSString*)excuseId;
+
 // method to add an excuse by sport
 -(BOOL)AddNewExcuse:(NSString*)excuseText SportID:(NSString*)sportId;
 

@@ -10,4 +10,8 @@
 
 @interface Excuse_Controller : NSObject
 
+-(NSString*)RandomExcuse:(NSString*)sportID;
+
+-(BOOL)AddExcuse:(NSString*)sportID ExcuseName:(NSString*)excuseName;
+
 @end
