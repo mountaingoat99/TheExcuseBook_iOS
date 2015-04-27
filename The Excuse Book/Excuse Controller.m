@@ -18,12 +18,13 @@
     NSArray *excuses = [excuse GetExcuseListBySport:sportID];
     
     // gets a random number from the array
-    int r = arc4random_uniform((int)[excuses objectAtIndex:1]);
-    //NSUInteger r = arc4random() % [excuses count];
+    NSUInteger r = arc4random() % [excuses count];
     
-    NSString *rand = [NSString stringWithFormat:@"%d", r];
+    NSString *numId = [[excuses objectAtIndex:r] objectAtIndex:0];
+    NSLog(@"Random Int was%d", r);
+    NSLog(@"Random ExcuseID was%@", numId);
     
-    return [excuse GetExcuseName:rand];
+    return [excuse GetExcuseName:numId];
 }
 
 -(BOOL)AddExcuse:(NSString*)sportID ExcuseName:(NSString*)excuseName {

@@ -36,6 +36,13 @@
     
 }
 
+-(void)UpdateDefaultSport:(NSString*)sportID {
+    
+    DefaultModel *defaultModel = [[DefaultModel alloc] init];
+    
+    [defaultModel UpdateDefaultSport:sportID];
+}
+
 // android version has a method to add sport name and id at once
 // but that is for the wear app, shouldn't need it for the iOS version
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A61AEDB2750058CCCA /* MessageUI.framework */; };
+		265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A81AEDB2920058CCCA /* QuartzCore.framework */; };
+		265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923AA1AEDB2A10058CCCA /* Social.framework */; };
+		265923AD1AEDC1190058CCCA /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 265923AC1AEDC1190058CCCA /* excuse_book_database.db */; };
 		268DDAA51AE3F12700948E93 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DDAA41AE3F12700948E93 /* InterfaceController.m */; };
 		268DDAA71AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAA61AE3F12700948E93 /* Images.xcassets */; };
 		268DDAAB1AE3F12700948E93 /* The Excuse Book WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */; };
@@ -69,6 +73,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		265923A61AEDB2750058CCCA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		265923A81AEDB2920058CCCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		265923AA1AEDB2A10058CCCA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		265923AC1AEDC1190058CCCA /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = excuse_book_database.db; path = ../TheExcuseBookMediaData/excuse_book_database.db; sourceTree = "<group>"; };
 		268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Excuse Book WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268DDAA21AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268DDAA31AE3F12700948E93 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -79,7 +87,6 @@
 		268DDAB21AE3F12700948E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		268DDAB41AE3F12700948E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		26A67C171AEBFB2100A3C350 /* excuse_book.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = excuse_book.db; path = ../TheExcuseBookMediaData/excuse_book.db; sourceTree = "<group>"; };
 		26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA4AD91AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DA4ADA1AE3EF8A009F4229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */,
+				265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */,
+				265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */,
 				26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +185,10 @@
 		26DA4ACC1AE3EF8A009F4229 = {
 			isa = PBXGroup;
 			children = (
-				26A67C171AEBFB2100A3C350 /* excuse_book.db */,
+				265923AC1AEDC1190058CCCA /* excuse_book_database.db */,
+				265923AA1AEDB2A10058CCCA /* Social.framework */,
+				265923A81AEDB2920058CCCA /* QuartzCore.framework */,
+				265923A61AEDB2750058CCCA /* MessageUI.framework */,
 				26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */,
 				26DA4AD71AE3EF8A009F4229 /* The Excuse Book */,
 				26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */,
@@ -434,6 +447,7 @@
 			files = (
 				26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */,
 				26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */,
+				265923AD1AEDC1190058CCCA /* excuse_book_database.db in Resources */,
 				26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,7 +35,7 @@
     
     NSString *sportID;
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = [NSString stringWithFormat:@"select default_id from default_sport where id = 1"];
                        
@@ -45,7 +45,7 @@
 // Update the default sport
 -(BOOL)UpdateDefaultSport:(NSString*)sportid {
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = [NSString stringWithFormat:@"update default_sport set default_id=%@ where id = 1", sportid];
     

@@ -9,6 +9,7 @@
 #import "SportsModel.h"
 #import "DBManager.h"
 #import "ExcuseModel.h"
+#import "DefaultController.h"
 
 @interface SportsModel ()
 
@@ -36,7 +37,7 @@
 // Get a list of sports: ID and Name
 -(NSArray*)GetSportsAndIDs {
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = @"select * from sports";
     
@@ -51,7 +52,7 @@
     
     NSString *sport;
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = [NSString stringWithFormat:@"select sport_name from sports where id=%@", sportID];
     
@@ -63,9 +64,9 @@
 // so we don't need a seperate method
 -(BOOL)AddNewSport:(NSString*)sportName {
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
-    NSString *query = [NSString stringWithFormat:@"insert into sports(sport_name) values(%@)", sportName];
+    NSString *query = [NSString stringWithFormat:@"insert into sports(sport_name) values('%@')", sportName];
     
     [self.dbManager executeQuery:query];
     
@@ -77,9 +78,13 @@
         
         NSLog(@"query was executed successfully. Affected Rows = %d", self.dbManager.affectedRows);
         // if the new sport insert is successful we want to add at least one excuse
-        NSString *firstExcuse = @"I've never liked this sport anyway";
+        NSString *firstExcuse = @"I do not like this sport anyway";
         ExcuseModel *excuse = [[ExcuseModel alloc] init];
         [excuse AddNewExcuse:firstExcuse SportID:lastIDInserted];
+        // and then change the default sport
+        DefaultController *defaultSport = [[DefaultController alloc] init];
+        [defaultSport UpdateDefaultSport:lastIDInserted];
+        
         return true;
         
     } else {

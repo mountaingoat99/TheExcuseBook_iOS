@@ -10,4 +10,8 @@
 
 @interface ShowExcuseView : UIViewController
 
+@property (nonatomic, strong) NSString *defaultSportID;
+@property (weak, nonatomic) IBOutlet UILabel *lblRandomExcuse;
+- (IBAction)btnNewExcuse:(id)sender;
+
 @end

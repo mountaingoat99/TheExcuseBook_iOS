@@ -8,7 +8,7 @@
         <!--ExcuseMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ExcuseMe" title="ExcuseMe" modalTransitionStyle="partialCurl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ExcuseMeView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExcuseMe" title="ExcuseMe" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ExcuseMeView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,34 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblSportName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-Ps-tmH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestSport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-Ps-tmH">
                                 <rect key="frame" x="26" y="98" width="548" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-Y6-sTC">
-                                <rect key="frame" x="247" y="285" width="107" height="30"/>
+                                <rect key="frame" x="46" y="250" width="508" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9LZ-R2-vzb"/>
+                                </constraints>
                                 <state key="normal" title="Choose Excuse">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y2C-Ym-RsV" kind="show" id="0rC-19-9t9"/>
+                                    <segue destination="Y2C-Ym-RsV" kind="show" identifier="segueChooseToRandom" id="0rC-19-9t9"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="qRr-Ps-tmH" secondAttribute="centerX" id="Cb9-Fd-yrn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qRr-Ps-tmH" secondAttribute="trailing" constant="10" id="Igg-TO-6eG"/>
                             <constraint firstAttribute="centerY" secondItem="Qa4-Y6-sTC" secondAttribute="centerY" id="KJi-ll-VCo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qa4-Y6-sTC" secondAttribute="trailing" constant="30" id="RCe-S7-Efm"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="YL5-JD-5rA"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZcF-9I-eQu"/>
+                            <constraint firstItem="Qa4-Y6-sTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="rqr-9c-yD2"/>
                             <constraint firstAttribute="centerX" secondItem="Qa4-Y6-sTC" secondAttribute="centerX" id="yC6-vV-NYN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="The Excuse Book" id="lgu-wu-PNM"/>
+                    <navigationItem key="navigationItem" title="The Excuse Book" id="lgu-wu-PNM">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" style="plain" id="gZl-Jl-wAb">
+                            <connections>
+                                <action selector="btnMenu:" destination="BYZ-38-t0r" id="nHv-6b-5fd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblDefaultSportName" destination="qRr-Ps-tmH" id="nk3-E5-8EW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +67,7 @@
         <!--ShowExcuse-->
         <scene sceneID="hjm-Wa-Xqu">
             <objects>
-                <viewController storyboardIdentifier="ShowExcuse" title="ShowExcuse" modalTransitionStyle="partialCurl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y2C-Ym-RsV" customClass="ShowExcuseView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowExcuse" title="ShowExcuse" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y2C-Ym-RsV" customClass="ShowExcuseView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vev-ZX-W37"/>
                         <viewControllerLayoutGuide type="bottom" id="0Fl-9U-kBu"/>
@@ -62,20 +76,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Excuse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voS-Pv-lVY">
-                                <rect key="frame" x="237" y="289" width="126" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voS-Pv-lVY">
+                                <rect key="frame" x="36" y="300" width="528" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS7-Uf-yvl">
+                                <rect key="frame" x="46" y="250" width="508" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AyS-D9-DIL"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNewExcuse:" destination="Y2C-Ym-RsV" eventType="touchUpInside" id="Ufy-2S-SeX"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QS7-Uf-yvl" secondAttribute="trailing" constant="30" id="1rf-FH-Ia7"/>
+                            <constraint firstItem="voS-Pv-lVY" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="20" id="9sH-NZ-HPY"/>
                             <constraint firstAttribute="centerY" secondItem="voS-Pv-lVY" secondAttribute="centerY" id="HHV-sY-HbL"/>
+                            <constraint firstAttribute="centerY" secondItem="QS7-Uf-yvl" secondAttribute="centerY" id="QyX-ft-KbQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="voS-Pv-lVY" secondAttribute="trailing" constant="20" id="VOV-a3-Bd3"/>
+                            <constraint firstItem="QS7-Uf-yvl" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="30" id="hlD-IL-Ukm"/>
+                            <constraint firstAttribute="centerX" secondItem="QS7-Uf-yvl" secondAttribute="centerX" id="kgp-5o-2z1"/>
                             <constraint firstAttribute="centerX" secondItem="voS-Pv-lVY" secondAttribute="centerX" id="ll4-Qy-POI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The Excuse Book" id="TvI-yK-D3e"/>
+                    <connections>
+                        <outlet property="lblRandomExcuse" destination="voS-Pv-lVY" id="WGG-jR-ZYt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjZ-fL-2EU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

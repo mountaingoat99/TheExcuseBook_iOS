@@ -38,7 +38,7 @@
     
     NSArray *excuses;
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = [NSString stringWithFormat:@"select id from excuses where sport_id=%@", sportId];
     
@@ -47,7 +47,7 @@
 
 -(NSString*)GetExcuseName:(NSString*)excuseId {
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
     NSString *query = [NSString stringWithFormat:@"select excuse_name from excuses where id=%@", excuseId];
     
@@ -58,9 +58,9 @@
 // method to add an excuse by sport
 -(BOOL)AddNewExcuse:(NSString*)excuseText SportID:(NSString*)sportId{
 
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"excuse_book_database.db"];
     
-    NSString *query = [NSString stringWithFormat:@"insert into excuses(sport_id, excuse_name) values(%@, %@)", sportId, excuseText];
+    NSString *query = [NSString stringWithFormat:@"insert into excuses(sport_id, excuse_name) values(%@, '%@')", sportId, excuseText];
     
     [self.dbManager executeQuery:query];
     

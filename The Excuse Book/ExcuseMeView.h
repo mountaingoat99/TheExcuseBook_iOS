@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface ExcuseMeView : UIViewController
+@interface ExcuseMeView : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
+@property (nonatomic, strong) NSString *defaultSportID;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblDefaultSportName;
+
+- (IBAction)btnMenu:(id)sender;
 
 @end
 
