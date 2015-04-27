@@ -12,8 +12,11 @@
 @interface ExcuseMeView : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) NSString *defaultSportID;
+//popover
+@property (nonatomic, retain) UIPopoverController *popoverContr;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDefaultSportName;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
 - (IBAction)btnMenu:(id)sender;
 

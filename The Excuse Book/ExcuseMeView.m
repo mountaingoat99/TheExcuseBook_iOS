@@ -8,21 +8,33 @@
 
 #import "ExcuseMeView.h"
 #import "DefaultController.h"
+#import "Excuse Controller.h"
 #import "ShowExcuseView.h"
+#import "SwitchSportView.h"
+#import "WYPopoverController.h"
 
-@interface ExcuseMeView ()
+@interface ExcuseMeView () <WYPopoverControllerDelegate>
+{
+    WYPopoverController* popoverController;
+}
 
 @property (nonatomic, strong) NSString *defaultSportName;
 @property (nonatomic, strong) NSString *NewSportName;
+@property (nonatomic, strong) NSString *NewExcuseName;
 
 -(void)CheckDefaultSport;
 -(void)LoadDefaultSport;
 -(void)AddNewSportAlert;
 -(void)AddSport;
+-(void)AddNewExcuseAlert;
+-(void)AddNewExcuse;
+-(void)PresentSportsChoice;
 
 @end
 
 @implementation ExcuseMeView
+
+@synthesize popoverContr;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,6 +67,13 @@
         random.defaultSportID = self.defaultSportID;
         
     }
+    
+    if([segue.identifier isEqualToString:@"segueSwitchSports"]) {
+        SwitchSportView *switchSport = [segue destinationViewController];
+        
+        switchSport.defaultSportID = self.defaultSportID;
+    }
+        
 }
 
 -(void)CheckDefaultSport {
@@ -130,6 +149,101 @@
     
 }
 
+-(void)AddNewExcuseAlert {
+    
+    // updated alertController for iOS 8
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Add Excuse"
+                                          message:nil
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
+     {
+         textField.placeholder = @"Enter New Excuse";
+         textField.keyboardAppearance = UIKeyboardAppearanceDark;
+         textField.keyboardType = UIKeyboardTypeDefault;
+         textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+     }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                       NSLog(@"Cancel Action");
+                                   }];
+    
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK Action");
+                                   UITextField *name = alertController.textFields.firstObject;
+                                   self.NewExcuseName = name.text;
+                                   [self AddNewExcuse];
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+-(void)AddNewExcuse {
+    
+    Excuse_Controller *excuse = [[Excuse_Controller alloc] init];
+    
+    if (![excuse AddExcuse:self.defaultSportID ExcuseName:self.NewExcuseName]) {
+        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Hold On!"
+                                                        message:@"Sport did not get entered, please try again"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [error show];
+        [error reloadInputViews];
+    } else {
+        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Awesome"
+                                                        message:@"New Excuse Added!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [error show];
+        [error reloadInputViews];
+    }
+}
+
+-(void)PresentSportsChoice {
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        
+        UIStoryboard *sboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SwitchSportView *switchDiver = [sboard instantiateViewControllerWithIdentifier:@"SwitchSportView"];
+        
+        popoverController = [[WYPopoverController alloc] initWithContentViewController:switchDiver];
+        popoverController.delegate = self;
+        popoverController.popoverContentSize = CGSizeMake(300, 300);
+        switchDiver.defaultSportID = self.defaultSportID;
+        [popoverController presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
+        //[popoverController presentPopoverFromRect:[(UIButton *)sender frame] inView:self.view permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
+        
+    } else {
+        
+        UIStoryboard *sboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SwitchSportView *switchDiver = [sboard instantiateViewControllerWithIdentifier:@"SwitchSportView"];
+        
+        popoverContr = [[UIPopoverController alloc] initWithContentViewController:switchDiver];
+        popoverContr.popoverContentSize = CGSizeMake(400, 400);
+        switchDiver.defaultSportID = self.defaultSportID;
+        [popoverContr presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        //[popoverContr presentPopoverFromRect:[(UIButton *)sender frame] inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }
+    
+    //[self performSegueWithIdentifier:@"segueSwitchSports" sender:self];
+    
+}
+
 - (IBAction)btnMenu:(id)sender {
     
     // updated alertController for iOS 8
@@ -143,7 +257,7 @@
                                   style:UIAlertActionStyleDefault
                                   handler:^(UIAlertAction *action)
                                   {
-                                      // TODO call the segue to change a sport
+                                      [self PresentSportsChoice];
                                   }];
     
     UIAlertAction *addNewSport = [UIAlertAction
@@ -159,7 +273,7 @@
                                   style:UIAlertActionStyleDefault
                                   handler:^(UIAlertAction *action)
                                   {
-                                      // TODO call the segue to add an excuse
+                                      [self AddNewExcuseAlert];
                                   }];
     
     

@@ -50,14 +50,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The Excuse Book" id="lgu-wu-PNM">
-                        <barButtonItem key="rightBarButtonItem" title="Menu" style="plain" id="gZl-Jl-wAb">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="gZl-Jl-wAb">
                             <connections>
                                 <action selector="btnMenu:" destination="BYZ-38-t0r" id="nHv-6b-5fd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnMenu" destination="gZl-Jl-wAb" id="Ip9-bc-qf1"/>
                         <outlet property="lblDefaultSportName" destination="qRr-Ps-tmH" id="nk3-E5-8EW"/>
+                        <segue destination="fFO-kW-gfW" kind="show" identifier="segueSwitchSports" id="kQ8-lP-DJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,6 +117,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjZ-fL-2EU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2133" y="431"/>
+        </scene>
+        <!--SwitchSports-->
+        <scene sceneID="RME-gd-dzU">
+            <objects>
+                <viewController storyboardIdentifier="SwitchSportView" title="SwitchSports" id="fFO-kW-gfW" customClass="SwitchSportView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="727-At-sHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0U-n9-3dc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KcJ-7G-AFc">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-0B-OVT">
+                                <rect key="frame" x="16" y="16" width="368" height="368"/>
+                                <color key="backgroundColor" red="0.60013548569999997" green="0.39584710769999998" blue="0.32502237090000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.60013548567747987" green="0.39584710770609555" blue="0.32502237091372421" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="idCellRecord" textLabel="sNw-bX-9py" style="IBUITableViewCellStyleDefault" id="IfY-Uc-yu0">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IfY-Uc-yu0" id="hqv-xJ-HNO">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sNw-bX-9py">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.60013548567747987" green="0.39584710770609555" blue="0.32502237091372421" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="D0U-n9-3dc" firstAttribute="top" secondItem="AvD-0B-OVT" secondAttribute="bottom" constant="16" id="0v3-Zw-x5k"/>
+                            <constraint firstItem="AvD-0B-OVT" firstAttribute="leading" secondItem="KcJ-7G-AFc" secondAttribute="leadingMargin" id="474-RU-QQD"/>
+                            <constraint firstItem="AvD-0B-OVT" firstAttribute="top" secondItem="KcJ-7G-AFc" secondAttribute="topMargin" constant="16" id="BHq-3e-NbQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AvD-0B-OVT" secondAttribute="trailing" id="rZH-PM-i50"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-Zi-g0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="1083"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8D0-UQ-IzD">

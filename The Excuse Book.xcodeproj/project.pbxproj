@@ -11,6 +11,9 @@
 		265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A81AEDB2920058CCCA /* QuartzCore.framework */; };
 		265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923AA1AEDB2A10058CCCA /* Social.framework */; };
 		265923AD1AEDC1190058CCCA /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 265923AC1AEDC1190058CCCA /* excuse_book_database.db */; };
+		265923B21AEDCFCE0058CCCA /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */; };
+		265923B31AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */; };
+		265923B61AEDD1220058CCCA /* SwitchSportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B51AEDD1220058CCCA /* SwitchSportView.m */; };
 		268DDAA51AE3F12700948E93 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DDAA41AE3F12700948E93 /* InterfaceController.m */; };
 		268DDAA71AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAA61AE3F12700948E93 /* Images.xcassets */; };
 		268DDAAB1AE3F12700948E93 /* The Excuse Book WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */; };
@@ -77,6 +80,12 @@
 		265923A81AEDB2920058CCCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265923AA1AEDB2A10058CCCA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		265923AC1AEDC1190058CCCA /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = excuse_book_database.db; path = ../TheExcuseBookMediaData/excuse_book_database.db; sourceTree = "<group>"; };
+		265923AE1AEDCFCE0058CCCA /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		265923B01AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		265923B41AEDD1220058CCCA /* SwitchSportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchSportView.h; sourceTree = "<group>"; };
+		265923B51AEDD1220058CCCA /* SwitchSportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchSportView.m; sourceTree = "<group>"; };
 		268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Excuse Book WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268DDAA21AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268DDAA31AE3F12700948E93 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -217,18 +226,8 @@
 				26EFCF321AEC1F3C00992828 /* UI */,
 				26EFCF311AEC1F2500992828 /* ViewControllers */,
 				26EFCF301AEC1EFE00992828 /* Supporting Files */,
-				26DA4AD81AE3EF8A009F4229 /* Supporting Files */,
 			);
 			path = "The Excuse Book";
-			sourceTree = "<group>";
-		};
-		26DA4AD81AE3EF8A009F4229 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				26DA4AD91AE3EF8A009F4229 /* Info.plist */,
-				26DA4ADA1AE3EF8A009F4229 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */ = {
@@ -251,6 +250,12 @@
 		26EFCF301AEC1EFE00992828 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				265923AE1AEDCFCE0058CCCA /* WYPopoverController.h */,
+				265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */,
+				265923B01AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.h */,
+				265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */,
+				26DA4AD91AE3EF8A009F4229 /* Info.plist */,
+				26DA4ADA1AE3EF8A009F4229 /* main.m */,
 				26DA4ADC1AE3EF8A009F4229 /* AppDelegate.h */,
 				26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */,
 			);
@@ -264,6 +269,8 @@
 				26DA4AE01AE3EF8A009F4229 /* ExcuseMeView.m */,
 				26EFCF471AEC22AF00992828 /* ShowExcuseView.h */,
 				26EFCF481AEC22AF00992828 /* ShowExcuseView.m */,
+				265923B41AEDD1220058CCCA /* SwitchSportView.h */,
+				265923B51AEDD1220058CCCA /* SwitchSportView.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -476,10 +483,13 @@
 			files = (
 				26EFCF401AEC219700992828 /* SportsModel.m in Sources */,
 				26EFCF3D1AEC218300992828 /* ExcuseModel.m in Sources */,
+				265923B31AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m in Sources */,
 				26DA4AE11AE3EF8A009F4229 /* ExcuseMeView.m in Sources */,
 				26DA4ADE1AE3EF8A009F4229 /* AppDelegate.m in Sources */,
 				26EFCF461AEC21B800992828 /* Excuse Controller.m in Sources */,
 				26EFCF3A1AEC216A00992828 /* DefaultModel.m in Sources */,
+				265923B21AEDCFCE0058CCCA /* WYPopoverController.m in Sources */,
+				265923B61AEDD1220058CCCA /* SwitchSportView.m in Sources */,
 				26EFCF491AEC22AF00992828 /* ShowExcuseView.m in Sources */,
 				26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */,
 				26EFCF371AEC1FE400992828 /* DBManager.m in Sources */,
