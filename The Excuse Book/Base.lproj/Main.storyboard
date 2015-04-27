@@ -168,6 +168,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="400"/>
+                    <connections>
+                        <outlet property="tblSports" destination="AvD-0B-OVT" id="3oO-Oe-5XG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-Zi-g0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -236,7 +236,7 @@
         popoverContr = [[UIPopoverController alloc] initWithContentViewController:switchDiver];
         popoverContr.popoverContentSize = CGSizeMake(400, 400);
         switchDiver.defaultSportID = self.defaultSportID;
-        [popoverContr presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        [popoverContr presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:0 animated:YES];
         //[popoverContr presentPopoverFromRect:[(UIButton *)sender frame] inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     }
     

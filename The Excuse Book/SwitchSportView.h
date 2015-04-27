@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SwitchSportView : UIViewController
+@interface SwitchSportView : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSString *defaultSportID;
+@property (nonatomic, strong) NSArray * sportInfo;
+
+@property (weak, nonatomic) IBOutlet UITableView *tblSports;
 
 @end
