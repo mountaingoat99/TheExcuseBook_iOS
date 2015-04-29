@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WYPopoverController.h"
+
+@protocol SwitchSportDelegate
+
+-(void)SwitchedSport;
+
+@end
 
 @interface SwitchSportView : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) id<SwitchSportDelegate> delegate;
+
 @property (nonatomic, strong) NSString *defaultSportID;
 @property (nonatomic, strong) NSArray * sportInfo;
+//WYPopoverController delegate
+@property (nonatomic, assign) WYPopoverController *controller;
 
 @property (weak, nonatomic) IBOutlet UITableView *tblSports;
 

@@ -10,7 +10,6 @@
 		265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A61AEDB2750058CCCA /* MessageUI.framework */; };
 		265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A81AEDB2920058CCCA /* QuartzCore.framework */; };
 		265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923AA1AEDB2A10058CCCA /* Social.framework */; };
-		265923AD1AEDC1190058CCCA /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 265923AC1AEDC1190058CCCA /* excuse_book_database.db */; };
 		265923B21AEDCFCE0058CCCA /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */; };
 		265923B31AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */; };
 		265923B61AEDD1220058CCCA /* SwitchSportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B51AEDD1220058CCCA /* SwitchSportView.m */; };
@@ -20,6 +19,7 @@
 		268DDAB31AE3F12700948E93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB11AE3F12700948E93 /* Interface.storyboard */; };
 		268DDAB51AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB41AE3F12700948E93 /* Images.xcassets */; };
 		268DDAB81AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		269B19D21AF05AB10036500C /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 269B19D11AF05AB10036500C /* excuse_book_database.db */; };
 		26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */; };
 		26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADA1AE3EF8A009F4229 /* main.m */; };
 		26DA4ADE1AE3EF8A009F4229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */; };
@@ -79,7 +79,6 @@
 		265923A61AEDB2750058CCCA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		265923A81AEDB2920058CCCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265923AA1AEDB2A10058CCCA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		265923AC1AEDC1190058CCCA /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = excuse_book_database.db; path = ../TheExcuseBookMediaData/excuse_book_database.db; sourceTree = "<group>"; };
 		265923AE1AEDCFCE0058CCCA /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
 		265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		265923B01AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		268DDAB01AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268DDAB21AE3F12700948E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		268DDAB41AE3F12700948E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		269B19D11AF05AB10036500C /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = excuse_book_database.db; sourceTree = "<group>"; };
 		26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA4AD91AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		26DA4ACC1AE3EF8A009F4229 = {
 			isa = PBXGroup;
 			children = (
-				265923AC1AEDC1190058CCCA /* excuse_book_database.db */,
+				269B19D11AF05AB10036500C /* excuse_book_database.db */,
 				265923AA1AEDB2A10058CCCA /* Social.framework */,
 				265923A81AEDB2920058CCCA /* QuartzCore.framework */,
 				265923A61AEDB2750058CCCA /* MessageUI.framework */,
@@ -454,7 +454,7 @@
 			files = (
 				26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */,
 				26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */,
-				265923AD1AEDC1190058CCCA /* excuse_book_database.db in Resources */,
+				269B19D21AF05AB10036500C /* excuse_book_database.db in Resources */,
 				26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

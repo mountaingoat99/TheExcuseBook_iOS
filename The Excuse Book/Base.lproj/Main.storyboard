@@ -59,7 +59,6 @@
                     <connections>
                         <outlet property="btnMenu" destination="gZl-Jl-wAb" id="Ip9-bc-qf1"/>
                         <outlet property="lblDefaultSportName" destination="qRr-Ps-tmH" id="nk3-E5-8EW"/>
-                        <segue destination="fFO-kW-gfW" kind="show" identifier="segueSwitchSports" id="kQ8-lP-DJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -153,14 +152,42 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-mo-75V">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="16"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.2627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-Yv-uk3">
+                                <rect key="frame" x="0.0" y="384" width="400" height="16"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.26274509800000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.396078431372549" green="0.2627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D0U-n9-3dc" firstAttribute="top" secondItem="AvD-0B-OVT" secondAttribute="bottom" constant="16" id="0v3-Zw-x5k"/>
                             <constraint firstItem="AvD-0B-OVT" firstAttribute="leading" secondItem="KcJ-7G-AFc" secondAttribute="leadingMargin" id="474-RU-QQD"/>
+                            <constraint firstItem="ppC-mo-75V" firstAttribute="top" secondItem="727-At-sHy" secondAttribute="bottom" id="6ze-8r-bMN"/>
                             <constraint firstItem="AvD-0B-OVT" firstAttribute="top" secondItem="KcJ-7G-AFc" secondAttribute="topMargin" constant="16" id="BHq-3e-NbQ"/>
+                            <constraint firstItem="AvD-0B-OVT" firstAttribute="top" secondItem="ppC-mo-75V" secondAttribute="bottom" id="BXg-R2-jGO"/>
+                            <constraint firstItem="f6F-Yv-uk3" firstAttribute="leading" secondItem="AvD-0B-OVT" secondAttribute="leading" id="CS9-hs-SWM"/>
+                            <constraint firstItem="f6F-Yv-uk3" firstAttribute="trailing" secondItem="AvD-0B-OVT" secondAttribute="trailing" id="LTb-d9-qvc"/>
+                            <constraint firstItem="ppC-mo-75V" firstAttribute="trailing" secondItem="AvD-0B-OVT" secondAttribute="trailing" id="RZr-Nq-C5H"/>
+                            <constraint firstItem="f6F-Yv-uk3" firstAttribute="top" secondItem="AvD-0B-OVT" secondAttribute="bottom" id="SjG-q8-ooc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ppC-mo-75V" secondAttribute="trailing" constant="-16" id="Zqf-nQ-bx8"/>
+                            <constraint firstItem="f6F-Yv-uk3" firstAttribute="leading" secondItem="KcJ-7G-AFc" secondAttribute="leadingMargin" constant="-16" id="cy0-gV-8el"/>
+                            <constraint firstItem="ppC-mo-75V" firstAttribute="leading" secondItem="AvD-0B-OVT" secondAttribute="leading" id="hFo-iB-SGh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AvD-0B-OVT" secondAttribute="trailing" id="rZH-PM-i50"/>
+                            <constraint firstItem="ppC-mo-75V" firstAttribute="leading" secondItem="KcJ-7G-AFc" secondAttribute="leadingMargin" constant="-16" id="riT-DS-DW1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f6F-Yv-uk3" secondAttribute="trailing" constant="-16" id="u2v-GP-kMC"/>
+                            <constraint firstItem="D0U-n9-3dc" firstAttribute="top" secondItem="f6F-Yv-uk3" secondAttribute="bottom" id="x6m-Xq-sfU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RZr-Nq-C5H"/>
+                                <exclude reference="hFo-iB-SGh"/>
+                                <exclude reference="CS9-hs-SWM"/>
+                                <exclude reference="LTb-d9-qvc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -174,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-Zi-g0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="1083"/>
+            <point key="canvasLocation" x="1431" y="1031"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8D0-UQ-IzD">

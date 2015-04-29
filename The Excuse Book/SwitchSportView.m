@@ -10,6 +10,7 @@
 #import "WYPopoverController.h"
 #import "DefaultController.h"
 #import "SportsModel.h"
+#import "ExcuseMeView.h"
 
 @interface SwitchSportView ()
 
@@ -35,15 +36,7 @@
     self.tblSports.layer.shadowOpacity = 1.0;
     [self.tblSports setSeparatorColor:[UIColor blackColor]];
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        // this doesn't seem to work
-        [WYPopoverController setDefaultTheme:[WYPopoverTheme theme]];
-        WYPopoverBackgroundView *appearance = [WYPopoverBackgroundView appearance];
-        appearance.backgroundColor = [UIColor colorWithRed:.16 green:.45 blue:.81 alpha:1];
-        
-    } else {
-        self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:.16 green:.45 blue:.81 alpha:1];
-    }
+    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:119/255.0 green:85/255.0 blue:71/255.0 alpha:1];
     
     [self loadData];
 }
@@ -51,14 +44,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.identifier isEqualToString:@""]) {
-        //ChooseDiver *switchDiver = [segue destinationViewController];
-        
-    }
 }
 
 // keeps the color of the selected cell the same -
@@ -69,15 +54,15 @@
     
     [self UpdateDefaultSport];
     
-    // either return to parent method or create a segue way back and use this
-    [self performSegueWithIdentifier:@"" sender:self];
-}
-
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath  {
+    [self.delegate SwitchedSport];
     
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.contentView.backgroundColor = cell.contentView.backgroundColor;
-    
+    // using the custome class dismiss the popover after passing instance of the class
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        [self.controller dismissPopoverAnimated:YES];
+        // else just dismiss the ViewController
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 -(void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -116,7 +101,6 @@
     
     return cell;
 }
-
 
 #pragma Private methods
 

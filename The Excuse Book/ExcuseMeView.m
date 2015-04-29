@@ -39,8 +39,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //self.view.backgroundColor = [UIColor clearColor];
-    
     [self CheckDefaultSport];
 }
 
@@ -67,13 +65,6 @@
         random.defaultSportID = self.defaultSportID;
         
     }
-    
-    if([segue.identifier isEqualToString:@"segueSwitchSports"]) {
-        SwitchSportView *switchSport = [segue destinationViewController];
-        
-        switchSport.defaultSportID = self.defaultSportID;
-    }
-        
 }
 
 -(void)CheckDefaultSport {
@@ -224,9 +215,11 @@
         popoverController = [[WYPopoverController alloc] initWithContentViewController:switchDiver];
         popoverController.delegate = self;
         popoverController.popoverContentSize = CGSizeMake(300, 300);
+        CGRect rect = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 1, 1);
+        switchDiver.delegate = self;
         switchDiver.defaultSportID = self.defaultSportID;
-        [popoverController presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
-        //[popoverController presentPopoverFromRect:[(UIButton *)sender frame] inView:self.view permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
+        switchDiver.controller = popoverController;
+        [popoverController presentPopoverFromRect:rect inView:self.view permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
         
     } else {
         
@@ -235,13 +228,16 @@
         
         popoverContr = [[UIPopoverController alloc] initWithContentViewController:switchDiver];
         popoverContr.popoverContentSize = CGSizeMake(400, 400);
+        CGRect rect = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 1, 1);
+        switchDiver.delegate = self;
         switchDiver.defaultSportID = self.defaultSportID;
-        [popoverContr presentPopoverFromBarButtonItem:self.btnMenu permittedArrowDirections:0 animated:YES];
-        //[popoverContr presentPopoverFromRect:[(UIButton *)sender frame] inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        [popoverContr presentPopoverFromRect:rect inView:self.view permittedArrowDirections:0 animated:YES];
     }
+}
+
+-(void)SwitchedSport {
     
-    //[self performSegueWithIdentifier:@"segueSwitchSports" sender:self];
-    
+    [self CheckDefaultSport];
 }
 
 - (IBAction)btnMenu:(id)sender {
