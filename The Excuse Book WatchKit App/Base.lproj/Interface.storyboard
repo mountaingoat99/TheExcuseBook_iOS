@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="90" alignment="center" title="The Excuse Book" id="3Fa-Hj-nmk">
+                            <connections>
+                                <action selector="btnShowExcuse" destination="AgC-eL-Hgc" id="WUJ-Sc-MQz"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="The Excuse" textAlignment="center" numberOfLines="5" id="wdg-XJ-koJ">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.39607843139999999" green="0.26274509800000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="lblExcuseName" destination="wdg-XJ-koJ" id="EHZ-p9-zMT"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>

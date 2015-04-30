@@ -7,9 +7,13 @@
 //
 
 #import "InterfaceController.h"
+#import "Excuse Controller.h"
+#import "DefaultController.h"
 
 
 @interface InterfaceController()
+
+@property (nonatomic, strong) NSString *defaultSport;
 
 @end
 
@@ -19,7 +23,8 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    // Configure interface objects here.
+    DefaultController *defaultSport = [[DefaultController alloc] init];
+    self.defaultSport = [defaultSport DefaultSportID];
 }
 
 - (void)willActivate {
@@ -32,6 +37,12 @@
     [super didDeactivate];
 }
 
+- (IBAction)btnShowExcuse {
+    
+    Excuse_Controller *excuse = [[Excuse_Controller alloc] init];
+    self.lblExcuseName.text = [excuse RandomExcuse:self.defaultSport];
+    
+}
 @end
 
 

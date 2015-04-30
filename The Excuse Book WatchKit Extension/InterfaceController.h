@@ -11,4 +11,8 @@
 
 @interface InterfaceController : WKInterfaceController
 
+- (IBAction)btnShowExcuse;
+
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblExcuseName;
+
 @end
