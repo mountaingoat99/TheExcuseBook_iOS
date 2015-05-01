@@ -7,26 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2652A0A51AF1BE2400C68481 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2652A0A41AF1BE2400C68481 /* WatchKit.framework */; };
-		2652A0AD1AF1BFC100C68481 /* DefaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF421AEC21A900992828 /* DefaultController.m */; };
-		2652A0AE1AF1BFDC00C68481 /* Excuse Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF451AEC21B800992828 /* Excuse Controller.m */; };
-		2652A0AF1AF1C05900C68481 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF361AEC1FE400992828 /* DBManager.m */; };
-		2652A0B01AF1C06400C68481 /* DefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF391AEC216A00992828 /* DefaultModel.m */; };
-		2652A0B11AF1C06F00C68481 /* ExcuseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3C1AEC218300992828 /* ExcuseModel.m */; };
-		2652A0B21AF1C07700C68481 /* SportsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3F1AEC219700992828 /* SportsModel.m */; };
-		2652A0B31AF1C11100C68481 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */; };
+		2647727E1AF2F4D200E92EB9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2647727D1AF2F4D200E92EB9 /* Media.xcassets */; };
 		265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A61AEDB2750058CCCA /* MessageUI.framework */; };
 		265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A81AEDB2920058CCCA /* QuartzCore.framework */; };
 		265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923AA1AEDB2A10058CCCA /* Social.framework */; };
 		265923B21AEDCFCE0058CCCA /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */; };
 		265923B31AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */; };
 		265923B61AEDD1220058CCCA /* SwitchSportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B51AEDD1220058CCCA /* SwitchSportView.m */; };
-		268DDAA51AE3F12700948E93 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DDAA41AE3F12700948E93 /* InterfaceController.m */; };
-		268DDAA71AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAA61AE3F12700948E93 /* Images.xcassets */; };
-		268DDAAB1AE3F12700948E93 /* The Excuse Book WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */; };
-		268DDAB31AE3F12700948E93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB11AE3F12700948E93 /* Interface.storyboard */; };
-		268DDAB51AE3F12700948E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DDAB41AE3F12700948E93 /* Images.xcassets */; };
-		268DDAB81AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		269B19D21AF05AB10036500C /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 269B19D11AF05AB10036500C /* excuse_book_database.db */; };
 		26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */; };
 		26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADA1AE3EF8A009F4229 /* main.m */; };
@@ -46,20 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		268DDAAC1AE3F12700948E93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 26DA4ACD1AE3EF8A009F4229 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 268DDAA91AE3F12700948E93;
-			remoteInfo = "The Excuse Book WatchKit App";
-		};
-		268DDAB61AE3F12700948E93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 26DA4ACD1AE3EF8A009F4229 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 268DDA9E1AE3F12700948E93;
-			remoteInfo = "The Excuse Book WatchKit Extension";
-		};
 		26DA4AEF1AE3EF8A009F4229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 26DA4ACD1AE3EF8A009F4229 /* Project object */;
@@ -76,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				268DDAB81AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,9 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2647727A1AF2E90200E92EB9 /* The Excuse Book.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "The Excuse Book.entitlements"; sourceTree = "<group>"; };
+		2647727D1AF2F4D200E92EB9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2652A0A41AF1BE2400C68481 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
-		2652A0B51AF1C43800C68481 /* The Excuse Book WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "The Excuse Book WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		2652A0B61AF1C4B600C68481 /* The Excuse Book.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "The Excuse Book.entitlements"; sourceTree = "<group>"; };
 		265923A61AEDB2750058CCCA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		265923A81AEDB2920058CCCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265923AA1AEDB2A10058CCCA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -96,15 +68,6 @@
 		265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		265923B41AEDD1220058CCCA /* SwitchSportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchSportView.h; sourceTree = "<group>"; };
 		265923B51AEDD1220058CCCA /* SwitchSportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchSportView.m; sourceTree = "<group>"; };
-		268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Excuse Book WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		268DDAA21AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		268DDAA31AE3F12700948E93 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		268DDAA41AE3F12700948E93 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		268DDAA61AE3F12700948E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		268DDAB01AE3F12700948E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		268DDAB21AE3F12700948E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		268DDAB41AE3F12700948E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		269B19D11AF05AB10036500C /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = excuse_book_database.db; sourceTree = "<group>"; };
 		26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,15 +100,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		268DDA9C1AE3F12700948E93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2652A0B31AF1C11100C68481 /* libsqlite3.dylib in Frameworks */,
-				2652A0A51AF1BE2400C68481 /* WatchKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		26DA4AD21AE3EF8A009F4229 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,44 +121,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		268DDAA01AE3F12700948E93 /* The Excuse Book WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2652A0B51AF1C43800C68481 /* The Excuse Book WatchKit Extension.entitlements */,
-				268DDAA31AE3F12700948E93 /* InterfaceController.h */,
-				268DDAA41AE3F12700948E93 /* InterfaceController.m */,
-				268DDAA61AE3F12700948E93 /* Images.xcassets */,
-				268DDAA11AE3F12700948E93 /* Supporting Files */,
-			);
-			path = "The Excuse Book WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		268DDAA11AE3F12700948E93 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				268DDAA21AE3F12700948E93 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		268DDAAE1AE3F12700948E93 /* The Excuse Book WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				268DDAB11AE3F12700948E93 /* Interface.storyboard */,
-				268DDAB41AE3F12700948E93 /* Images.xcassets */,
-				268DDAAF1AE3F12700948E93 /* Supporting Files */,
-			);
-			path = "The Excuse Book WatchKit App";
-			sourceTree = "<group>";
-		};
-		268DDAAF1AE3F12700948E93 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				268DDAB01AE3F12700948E93 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		26DA4ACC1AE3EF8A009F4229 = {
 			isa = PBXGroup;
 			children = (
@@ -216,8 +132,6 @@
 				26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */,
 				26DA4AD71AE3EF8A009F4229 /* The Excuse Book */,
 				26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */,
-				268DDAA01AE3F12700948E93 /* The Excuse Book WatchKit Extension */,
-				268DDAAE1AE3F12700948E93 /* The Excuse Book WatchKit App */,
 				26DA4AD61AE3EF8A009F4229 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,8 +141,6 @@
 			children = (
 				26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */,
 				26DA4AEE1AE3EF8A009F4229 /* The Excuse BookTests.xctest */,
-				268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */,
-				268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,7 +148,7 @@
 		26DA4AD71AE3EF8A009F4229 /* The Excuse Book */ = {
 			isa = PBXGroup;
 			children = (
-				2652A0B61AF1C4B600C68481 /* The Excuse Book.entitlements */,
+				2647727A1AF2E90200E92EB9 /* The Excuse Book.entitlements */,
 				26EFCF341AEC1F8500992828 /* Controllers */,
 				26EFCF331AEC1F6300992828 /* Model */,
 				26EFCF321AEC1F3C00992828 /* UI */,
@@ -294,6 +206,7 @@
 		26EFCF321AEC1F3C00992828 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2647727D1AF2F4D200E92EB9 /* Media.xcassets */,
 				26DA4AE21AE3EF8A009F4229 /* Main.storyboard */,
 				26DA4AE51AE3EF8A009F4229 /* Images.xcassets */,
 				26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */,
@@ -330,39 +243,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		268DDA9E1AE3F12700948E93 /* The Excuse Book WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 268DDABE1AE3F12700948E93 /* Build configuration list for PBXNativeTarget "The Excuse Book WatchKit Extension" */;
-			buildPhases = (
-				268DDA9B1AE3F12700948E93 /* Sources */,
-				268DDA9C1AE3F12700948E93 /* Frameworks */,
-				268DDA9D1AE3F12700948E93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				268DDAAD1AE3F12700948E93 /* PBXTargetDependency */,
-			);
-			name = "The Excuse Book WatchKit Extension";
-			productName = "The Excuse Book WatchKit Extension";
-			productReference = 268DDA9F1AE3F12700948E93 /* The Excuse Book WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		268DDAA91AE3F12700948E93 /* The Excuse Book WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 268DDABD1AE3F12700948E93 /* Build configuration list for PBXNativeTarget "The Excuse Book WatchKit App" */;
-			buildPhases = (
-				268DDAA81AE3F12700948E93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "The Excuse Book WatchKit App";
-			productName = "The Excuse Book WatchKit App";
-			productReference = 268DDAAA1AE3F12700948E93 /* The Excuse Book WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
-		};
 		26DA4AD41AE3EF8A009F4229 /* The Excuse Book */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DA4AF81AE3EF8A009F4229 /* Build configuration list for PBXNativeTarget "The Excuse Book" */;
@@ -375,7 +255,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				268DDAB71AE3F12700948E93 /* PBXTargetDependency */,
 			);
 			name = "The Excuse Book";
 			productName = "The Excuse Book";
@@ -409,24 +288,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "SingleCog Software";
 				TargetAttributes = {
-					268DDA9E1AE3F12700948E93 = {
-						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 5LME3793K2;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					268DDAA91AE3F12700948E93 = {
-						CreatedOnToolsVersion = 6.3;
-					};
 					26DA4AD41AE3EF8A009F4229 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 5LME3793K2;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -451,35 +318,16 @@
 			targets = (
 				26DA4AD41AE3EF8A009F4229 /* The Excuse Book */,
 				26DA4AED1AE3EF8A009F4229 /* The Excuse BookTests */,
-				268DDA9E1AE3F12700948E93 /* The Excuse Book WatchKit Extension */,
-				268DDAA91AE3F12700948E93 /* The Excuse Book WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		268DDA9D1AE3F12700948E93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				268DDAAB1AE3F12700948E93 /* The Excuse Book WatchKit App.app in Resources */,
-				268DDAA71AE3F12700948E93 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268DDAA81AE3F12700948E93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				268DDAB31AE3F12700948E93 /* Interface.storyboard in Resources */,
-				268DDAB51AE3F12700948E93 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		26DA4AD31AE3EF8A009F4229 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2647727E1AF2F4D200E92EB9 /* Media.xcassets in Resources */,
 				26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */,
 				26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */,
 				269B19D21AF05AB10036500C /* excuse_book_database.db in Resources */,
@@ -497,20 +345,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		268DDA9B1AE3F12700948E93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2652A0B21AF1C07700C68481 /* SportsModel.m in Sources */,
-				2652A0B11AF1C06F00C68481 /* ExcuseModel.m in Sources */,
-				268DDAA51AE3F12700948E93 /* InterfaceController.m in Sources */,
-				2652A0AE1AF1BFDC00C68481 /* Excuse Controller.m in Sources */,
-				2652A0B01AF1C06400C68481 /* DefaultModel.m in Sources */,
-				2652A0AD1AF1BFC100C68481 /* DefaultController.m in Sources */,
-				2652A0AF1AF1C05900C68481 /* DBManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		26DA4AD11AE3EF8A009F4229 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,16 +376,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		268DDAAD1AE3F12700948E93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 268DDAA91AE3F12700948E93 /* The Excuse Book WatchKit App */;
-			targetProxy = 268DDAAC1AE3F12700948E93 /* PBXContainerItemProxy */;
-		};
-		268DDAB71AE3F12700948E93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 268DDA9E1AE3F12700948E93 /* The Excuse Book WatchKit Extension */;
-			targetProxy = 268DDAB61AE3F12700948E93 /* PBXContainerItemProxy */;
-		};
 		26DA4AF01AE3EF8A009F4229 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26DA4AD41AE3EF8A009F4229 /* The Excuse Book */;
@@ -560,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		268DDAB11AE3F12700948E93 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				268DDAB21AE3F12700948E93 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		26DA4AE21AE3EF8A009F4229 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -587,70 +403,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		268DDAB91AE3F12700948E93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "The Excuse Book WatchKit Extension/The Excuse Book WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "The Excuse Book WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		268DDABA1AE3F12700948E93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "The Excuse Book WatchKit Extension/The Excuse Book WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "The Excuse Book WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		268DDABB1AE3F12700948E93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = The_Excuse_Book_WatchKit_Extension;
-				INFOPLIST_FILE = "The Excuse Book WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		268DDABC1AE3F12700948E93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = The_Excuse_Book_WatchKit_Extension;
-				INFOPLIST_FILE = "The Excuse Book WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
 		26DA4AF61AE3EF8A009F4229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,7 +489,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "The Excuse Book/The Excuse Book.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "The Excuse Book/Info.plist";
@@ -751,7 +502,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "The Excuse Book/The Excuse Book.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "The Excuse Book/Info.plist";
@@ -798,24 +548,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		268DDABD1AE3F12700948E93 /* Build configuration list for PBXNativeTarget "The Excuse Book WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				268DDABB1AE3F12700948E93 /* Debug */,
-				268DDABC1AE3F12700948E93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		268DDABE1AE3F12700948E93 /* Build configuration list for PBXNativeTarget "The Excuse Book WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				268DDAB91AE3F12700948E93 /* Debug */,
-				268DDABA1AE3F12700948E93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		26DA4AD01AE3EF8A009F4229 /* Build configuration list for PBXProject "The Excuse Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

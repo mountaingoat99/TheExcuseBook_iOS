@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *defaultSportID;
 @property (weak, nonatomic) IBOutlet UILabel *lblRandomExcuse;
+@property (weak, nonatomic) IBOutlet UIView *viewRandomExcuse;
 - (IBAction)btnNewExcuse:(id)sender;
 
 @end

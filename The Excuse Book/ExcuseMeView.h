@@ -17,6 +17,7 @@
 @property (nonatomic, retain) UIPopoverController *popoverContr;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDefaultSportName;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
 - (IBAction)btnMenu:(id)sender;

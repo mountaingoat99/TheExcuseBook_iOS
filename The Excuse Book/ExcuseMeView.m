@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.lblDefaultSportName setHidden:YES];
+    
     [self CheckDefaultSport];
 }
 
@@ -78,8 +80,53 @@
 
 -(void)LoadDefaultSport {
     
-    self.lblDefaultSportName.text = self.defaultSportName;
-    
+    switch ([self.defaultSportID intValue]) {
+        case 1:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"ExcuseBikeClosed"]];
+            break;
+        case 2:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"RunBookClosed"]];
+            break;
+        case 3:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"SkiBook"]];
+            break;
+        case 4:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"DiveBookClosed"]];
+            break;
+        case 5:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"SwimBook"]];
+            break;
+        case 6:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"TriBook"]];
+            break;
+        case 7:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"amFootballBook"]];
+            break;
+        case 8:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"baseballBook"]];
+            break;
+        case 9:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"footballBook"]];
+            break;
+        case 10:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"golfBook"]];
+            break;
+        default:
+            [self.backgroundImage setImage:[UIImage imageNamed:@"genericbookclosed"]];
+            [self.lblDefaultSportName setHidden:NO];
+            self.lblDefaultSportName.text = self.defaultSportName;
+            break;
+    }
 }
 
 -(void)AddNewSportAlert {

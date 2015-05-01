@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genericbookclosed" translatesAutoresizingMaskIntoConstraints="NO" id="8UG-Sk-6iu">
+                                <rect key="frame" x="16" y="80" width="568" height="520"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestSport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-Ps-tmH">
                                 <rect key="frame" x="26" y="98" width="548" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -24,11 +27,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-Y6-sTC">
-                                <rect key="frame" x="46" y="250" width="508" height="100"/>
+                                <rect key="frame" x="46" y="150" width="508" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="9LZ-R2-vzb"/>
+                                    <constraint firstAttribute="height" constant="300" id="9LZ-R2-vzb"/>
                                 </constraints>
-                                <state key="normal" title="Choose Excuse">
+                                <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,9 +45,13 @@
                             <constraint firstAttribute="centerX" secondItem="qRr-Ps-tmH" secondAttribute="centerX" id="Cb9-Fd-yrn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qRr-Ps-tmH" secondAttribute="trailing" constant="10" id="Igg-TO-6eG"/>
                             <constraint firstAttribute="centerY" secondItem="Qa4-Y6-sTC" secondAttribute="centerY" id="KJi-ll-VCo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8UG-Sk-6iu" secondAttribute="bottom" id="MZu-lH-SYx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qa4-Y6-sTC" secondAttribute="trailing" constant="30" id="RCe-S7-Efm"/>
+                            <constraint firstItem="8UG-Sk-6iu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WEO-pc-zi1"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="YL5-JD-5rA"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZcF-9I-eQu"/>
+                            <constraint firstItem="8UG-Sk-6iu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="fCy-Vp-8A2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8UG-Sk-6iu" secondAttribute="trailing" id="l3h-4m-5EZ"/>
                             <constraint firstItem="Qa4-Y6-sTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="rqr-9c-yD2"/>
                             <constraint firstAttribute="centerX" secondItem="Qa4-Y6-sTC" secondAttribute="centerX" id="yC6-vV-NYN"/>
                         </constraints>
@@ -57,6 +64,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundImage" destination="8UG-Sk-6iu" id="tHM-UB-4z9"/>
                         <outlet property="btnMenu" destination="gZl-Jl-wAb" id="Ip9-bc-qf1"/>
                         <outlet property="lblDefaultSportName" destination="qRr-Ps-tmH" id="nk3-E5-8EW"/>
                     </connections>
@@ -77,40 +85,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voS-Pv-lVY">
-                                <rect key="frame" x="36" y="300" width="528" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS7-Uf-yvl">
-                                <rect key="frame" x="46" y="250" width="508" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookopen" translatesAutoresizingMaskIntoConstraints="NO" id="gPe-nz-adh">
+                                <rect key="frame" x="16" y="64" width="568" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-nX-xo9">
+                                <rect key="frame" x="80" y="274" width="440" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS7-Uf-yvl">
+                                        <rect key="frame" x="0.0" y="0.0" width="440" height="53"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNewExcuse:" destination="Y2C-Ym-RsV" eventType="touchUpInside" id="Ufy-2S-SeX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zue-1b-Cut">
+                                        <rect key="frame" x="16" y="16" width="408" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="AyS-D9-DIL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zue-1b-Cut" secondAttribute="bottom" constant="16" id="24F-aa-YBS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zue-1b-Cut" secondAttribute="trailing" constant="16" id="31G-9l-Gzm"/>
+                                    <constraint firstAttribute="trailing" secondItem="QS7-Uf-yvl" secondAttribute="trailing" id="3Kp-Fh-tKP"/>
+                                    <constraint firstAttribute="centerX" secondItem="Zue-1b-Cut" secondAttribute="centerX" id="6Ih-Fo-RKM"/>
+                                    <constraint firstItem="QS7-Uf-yvl" firstAttribute="top" secondItem="TYV-nX-xo9" secondAttribute="top" id="ND7-3L-JEd"/>
+                                    <constraint firstItem="Zue-1b-Cut" firstAttribute="leading" secondItem="TYV-nX-xo9" secondAttribute="leading" constant="16" id="Q2S-pa-6Fk"/>
+                                    <constraint firstAttribute="centerY" secondItem="Zue-1b-Cut" secondAttribute="centerY" id="REL-zN-4Bg"/>
+                                    <constraint firstItem="QS7-Uf-yvl" firstAttribute="leading" secondItem="TYV-nX-xo9" secondAttribute="leading" id="iS0-zK-NlW"/>
+                                    <constraint firstItem="Zue-1b-Cut" firstAttribute="top" secondItem="TYV-nX-xo9" secondAttribute="top" constant="16" id="t5o-hO-LVK"/>
+                                    <constraint firstAttribute="bottom" secondItem="QS7-Uf-yvl" secondAttribute="bottom" id="yRi-Xa-VfK"/>
                                 </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnNewExcuse:" destination="Y2C-Ym-RsV" eventType="touchUpInside" id="Ufy-2S-SeX"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="QS7-Uf-yvl" secondAttribute="trailing" constant="30" id="1rf-FH-Ia7"/>
-                            <constraint firstItem="voS-Pv-lVY" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="20" id="9sH-NZ-HPY"/>
-                            <constraint firstAttribute="centerY" secondItem="voS-Pv-lVY" secondAttribute="centerY" id="HHV-sY-HbL"/>
-                            <constraint firstAttribute="centerY" secondItem="QS7-Uf-yvl" secondAttribute="centerY" id="QyX-ft-KbQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="voS-Pv-lVY" secondAttribute="trailing" constant="20" id="VOV-a3-Bd3"/>
-                            <constraint firstItem="QS7-Uf-yvl" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="30" id="hlD-IL-Ukm"/>
-                            <constraint firstAttribute="centerX" secondItem="QS7-Uf-yvl" secondAttribute="centerX" id="kgp-5o-2z1"/>
-                            <constraint firstAttribute="centerX" secondItem="voS-Pv-lVY" secondAttribute="centerX" id="ll4-Qy-POI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gPe-nz-adh" secondAttribute="trailing" id="0Vu-ME-d0b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TYV-nX-xo9" secondAttribute="trailing" constant="66" id="2Tc-9d-exd"/>
+                            <constraint firstAttribute="centerX" secondItem="TYV-nX-xo9" secondAttribute="centerX" id="3rH-UC-Hkc"/>
+                            <constraint firstItem="TYV-nX-xo9" firstAttribute="top" secondItem="vev-ZX-W37" secondAttribute="bottom" constant="186" id="4pz-Cc-Tzh"/>
+                            <constraint firstItem="TYV-nX-xo9" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="64" id="6pH-4x-QkO"/>
+                            <constraint firstItem="0Fl-9U-kBu" firstAttribute="top" secondItem="gPe-nz-adh" secondAttribute="bottom" id="Dve-5B-kq7"/>
+                            <constraint firstItem="gPe-nz-adh" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" id="OAy-mp-HHG"/>
+                            <constraint firstItem="TYV-nX-xo9" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="66" id="eYv-TW-Sa2"/>
+                            <constraint firstAttribute="centerY" secondItem="TYV-nX-xo9" secondAttribute="centerY" id="hV6-8L-hPS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TYV-nX-xo9" secondAttribute="trailing" constant="64" id="i5f-Mp-wrX"/>
+                            <constraint firstItem="gPe-nz-adh" firstAttribute="top" secondItem="vev-ZX-W37" secondAttribute="bottom" id="mH5-bY-dHR"/>
+                            <constraint firstItem="0Fl-9U-kBu" firstAttribute="top" secondItem="TYV-nX-xo9" secondAttribute="bottom" constant="250" id="qBe-YE-6iz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Tc-9d-exd"/>
+                                <exclude reference="4pz-Cc-Tzh"/>
+                                <exclude reference="eYv-TW-Sa2"/>
+                                <exclude reference="qBe-YE-6iz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="The Excuse Book" id="TvI-yK-D3e"/>
                     <connections>
-                        <outlet property="lblRandomExcuse" destination="voS-Pv-lVY" id="WGG-jR-ZYt"/>
+                        <outlet property="lblRandomExcuse" destination="Zue-1b-Cut" id="bSW-1F-ewm"/>
+                        <outlet property="viewRandomExcuse" destination="TYV-nX-xo9" id="MiT-4I-yoA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjZ-fL-2EU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,4 +261,8 @@
             <point key="canvasLocation" x="603" y="431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bookopen" width="800" height="586"/>
+        <image name="genericbookclosed" width="774" height="755"/>
+    </resources>
 </document>
