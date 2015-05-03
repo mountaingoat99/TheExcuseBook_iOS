@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //self.view.backgroundColor = [UIColor clearColor];
+    
     self.viewRandomExcuse.layer.shadowColor = [UIColor blackColor].CGColor;
     self.viewRandomExcuse.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
     self.viewRandomExcuse.layer.masksToBounds = NO;

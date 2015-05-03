@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //self.view.backgroundColor = [UIColor clearColor];
+    
     [self.lblDefaultSportName setHidden:YES];
     
     [self CheckDefaultSport];
@@ -329,11 +331,20 @@
                                 [self sendEmail];
                             }];
     
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                       NSLog(@"Cancel Action");
+                                   }];
+    
     
     [alertController addAction:changeSport];
     [alertController addAction:addNewSport];
     [alertController addAction:addNewExcuse];
     [alertController addAction:Email];
+    [alertController addAction:cancelAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
 }
@@ -352,6 +363,27 @@
     // present it on the screen
     [self presentViewController:composer animated:YES completion:nil];
     
+}
+
+// delegate method
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            [self canceledEmail];
+            break;
+        case MFMailComposeResultSent:
+            [self SentEmail];
+            break;
+        case MFMailComposeResultFailed:
+            [self FailedEmail];
+            break;
+        default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {

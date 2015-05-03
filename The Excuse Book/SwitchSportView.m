@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //self.view.backgroundColor = [UIColor clearColor];
+    
     self.tblSports.delegate = self;
     self.tblSports.dataSource = self;
     
@@ -93,6 +95,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCellRecord" forIndexPath:indexPath];
     
     cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+    cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.numberOfLines = 1;
     cell.backgroundColor = [UIColor clearColor];
     

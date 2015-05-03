@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         
-    //[self.window setBackgroundColor:[UIColor colorWithRed:121/255.0 green:85/255.0 blue:71/255.0 alpha:1]];
+    //[self.window setBackgroundColor:[UIColor colorWithRed:4/255.0 green:96/255.0 blue:86/255.0 alpha:1]];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:121/255.0 green:85/255.0 blue:71/255.0 alpha:1]];
     [[UINavigationBar appearance] setTranslucent:NO];
@@ -28,6 +28,11 @@
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
     //set back button arrow color
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    // UIAlertViewController
+    [[UIView appearanceWhenContainedIn:[UIAlertController class], nil] setTintColor:[UIColor blackColor]];
+    [[UIView appearanceWhenContainedIn:[UIAlertController class], nil] setBackgroundColor:[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]];
+    
     // Override point for customization after application launch.
     return YES;
 }

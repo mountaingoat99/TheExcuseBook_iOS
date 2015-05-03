@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="qRr-Ps-tmH" secondAttribute="centerX" id="Cb9-Fd-yrn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qRr-Ps-tmH" secondAttribute="trailing" constant="10" id="Igg-TO-6eG"/>
@@ -122,7 +122,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gPe-nz-adh" secondAttribute="trailing" id="0Vu-ME-d0b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TYV-nX-xo9" secondAttribute="trailing" constant="66" id="2Tc-9d-exd"/>
@@ -170,8 +170,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-0B-OVT">
                                 <rect key="frame" x="16" y="16" width="368" height="368"/>
-                                <color key="backgroundColor" red="0.60013548569999997" green="0.39584710769999998" blue="0.32502237090000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.60013548567747987" green="0.39584710770609555" blue="0.32502237091372421" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="idCellRecord" textLabel="sNw-bX-9py" style="IBUITableViewCellStyleDefault" id="IfY-Uc-yu0">
                                         <rect key="frame" x="0.0" y="0.0" width="368" height="44"/>
@@ -187,20 +189,20 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60013548567747987" green="0.39584710770609555" blue="0.32502237091372421" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-mo-75V">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="16"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.2627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.60013548569999997" green="0.39584710769999998" blue="0.32502237090000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-Yv-uk3">
                                 <rect key="frame" x="0.0" y="384" width="400" height="16"/>
-                                <color key="backgroundColor" red="0.39607843139999999" green="0.26274509800000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.60013548569999997" green="0.39584710769999998" blue="0.32502237090000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.396078431372549" green="0.2627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.60013548569999997" green="0.39584710769999998" blue="0.32502237090000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D0U-n9-3dc" firstAttribute="top" secondItem="AvD-0B-OVT" secondAttribute="bottom" constant="16" id="0v3-Zw-x5k"/>
                             <constraint firstItem="AvD-0B-OVT" firstAttribute="leading" secondItem="KcJ-7G-AFc" secondAttribute="leadingMargin" id="474-RU-QQD"/>
