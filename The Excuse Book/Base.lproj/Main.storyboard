@@ -39,15 +39,25 @@
                                     <segue destination="Y2C-Ym-RsV" kind="show" identifier="segueChooseToRandom" id="0rC-19-9t9"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-pf-KiZ" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aVr-Av-s5S"/>
+                                    <constraint firstAttribute="width" constant="320" id="n1S-Lv-JPe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ZMG-pf-KiZ" secondAttribute="centerX" id="1sK-Cz-Iso"/>
                             <constraint firstAttribute="centerX" secondItem="qRr-Ps-tmH" secondAttribute="centerX" id="Cb9-Fd-yrn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qRr-Ps-tmH" secondAttribute="trailing" constant="10" id="Igg-TO-6eG"/>
                             <constraint firstAttribute="centerY" secondItem="Qa4-Y6-sTC" secondAttribute="centerY" id="KJi-ll-VCo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8UG-Sk-6iu" secondAttribute="bottom" id="MZu-lH-SYx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qa4-Y6-sTC" secondAttribute="trailing" constant="30" id="RCe-S7-Efm"/>
                             <constraint firstItem="8UG-Sk-6iu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WEO-pc-zi1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ZMG-pf-KiZ" secondAttribute="bottom" id="XfT-Kg-Fis"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="YL5-JD-5rA"/>
                             <constraint firstItem="qRr-Ps-tmH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZcF-9I-eQu"/>
                             <constraint firstItem="8UG-Sk-6iu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="fCy-Vp-8A2"/>
@@ -65,6 +75,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backgroundImage" destination="8UG-Sk-6iu" id="tHM-UB-4z9"/>
+                        <outlet property="bannerView" destination="ZMG-pf-KiZ" id="olx-0Q-yp8"/>
                         <outlet property="btnMenu" destination="gZl-Jl-wAb" id="Ip9-bc-qf1"/>
                         <outlet property="lblDefaultSportName" destination="qRr-Ps-tmH" id="nk3-E5-8EW"/>
                     </connections>
@@ -103,7 +114,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zue-1b-Cut">
                                         <rect key="frame" x="16" y="16" width="408" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -121,11 +132,20 @@
                                     <constraint firstAttribute="bottom" secondItem="QS7-Uf-yvl" secondAttribute="bottom" id="yRi-Xa-VfK"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESt-nJ-6hE" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5SF-BF-v1U"/>
+                                    <constraint firstAttribute="width" constant="320" id="Wf9-1Q-1XW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gPe-nz-adh" secondAttribute="trailing" id="0Vu-ME-d0b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TYV-nX-xo9" secondAttribute="trailing" constant="66" id="2Tc-9d-exd"/>
+                            <constraint firstAttribute="centerX" secondItem="ESt-nJ-6hE" secondAttribute="centerX" id="3CY-vU-59u"/>
                             <constraint firstAttribute="centerX" secondItem="TYV-nX-xo9" secondAttribute="centerX" id="3rH-UC-Hkc"/>
                             <constraint firstItem="TYV-nX-xo9" firstAttribute="top" secondItem="vev-ZX-W37" secondAttribute="bottom" constant="186" id="4pz-Cc-Tzh"/>
                             <constraint firstItem="TYV-nX-xo9" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="64" id="6pH-4x-QkO"/>
@@ -134,6 +154,7 @@
                             <constraint firstItem="TYV-nX-xo9" firstAttribute="leading" secondItem="4eb-hG-wkC" secondAttribute="leadingMargin" constant="66" id="eYv-TW-Sa2"/>
                             <constraint firstAttribute="centerY" secondItem="TYV-nX-xo9" secondAttribute="centerY" id="hV6-8L-hPS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TYV-nX-xo9" secondAttribute="trailing" constant="64" id="i5f-Mp-wrX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ESt-nJ-6hE" secondAttribute="bottom" id="mF2-S3-usf"/>
                             <constraint firstItem="gPe-nz-adh" firstAttribute="top" secondItem="vev-ZX-W37" secondAttribute="bottom" id="mH5-bY-dHR"/>
                             <constraint firstItem="0Fl-9U-kBu" firstAttribute="top" secondItem="TYV-nX-xo9" secondAttribute="bottom" constant="250" id="qBe-YE-6iz"/>
                         </constraints>
@@ -148,6 +169,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="The Excuse Book" id="TvI-yK-D3e"/>
                     <connections>
+                        <outlet property="bannerView" destination="ESt-nJ-6hE" id="cGI-nT-CnQ"/>
                         <outlet property="lblRandomExcuse" destination="Zue-1b-Cut" id="bSW-1F-ewm"/>
                         <outlet property="viewRandomExcuse" destination="TYV-nX-xo9" id="MiT-4I-yoA"/>
                     </connections>
@@ -172,7 +194,7 @@
                                 <rect key="frame" x="16" y="16" width="368" height="368"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="sectionIndexColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="idCellRecord" textLabel="sNw-bX-9py" style="IBUITableViewCellStyleDefault" id="IfY-Uc-yu0">
@@ -184,7 +206,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sNw-bX-9py">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>

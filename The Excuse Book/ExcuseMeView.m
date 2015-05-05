@@ -39,15 +39,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //self.view.backgroundColor = [UIColor clearColor];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
     
     [self.lblDefaultSportName setHidden:YES];
     
     [self CheckDefaultSport];
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+    
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-9150360740164586/4668671754";
+    self.bannerView.rootViewController = self;
+    
+    // Testing ads on device here comment out after testing
+//    GADRequest *request = [GADRequest request];
+//    request.testDevices = @[ @"557a4c728b9860e5e386b606af0ca46a" ];
+//    [self.bannerView loadRequest:request];
+    
+    // Uncomment this after testing
+    [self.bannerView loadRequest:[GADRequest request]];
 }
 
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -122,6 +130,14 @@
         case 10:
             [self.lblDefaultSportName setHidden:YES];
             [self.backgroundImage setImage:[UIImage imageNamed:@"golfBook"]];
+            break;
+        case 11:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"frisbeeBook"]];
+            break;
+        case 12:
+            [self.lblDefaultSportName setHidden:YES];
+            [self.backgroundImage setImage:[UIImage imageNamed:@"basketballBook"]];
             break;
         default:
             [self.backgroundImage setImage:[UIImage imageNamed:@"genericbookclosed"]];

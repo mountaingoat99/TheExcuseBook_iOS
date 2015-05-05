@@ -10,6 +10,8 @@
 #import <MessageUI/MessageUI.h>
 #import "SwitchSportView.h"
 
+@import GoogleMobileAds;
+
 @interface ExcuseMeView : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate, SwitchSportDelegate>
 
 @property (nonatomic, strong) NSString *defaultSportID;
@@ -19,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDefaultSportName;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 - (IBAction)btnMenu:(id)sender;
 

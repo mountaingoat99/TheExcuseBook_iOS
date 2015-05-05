@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@import GoogleMobileAds;
+
 @interface ShowExcuseView : UIViewController
 
 @property (nonatomic, strong) NSString *defaultSportID;
 @property (weak, nonatomic) IBOutlet UILabel *lblRandomExcuse;
 @property (weak, nonatomic) IBOutlet UIView *viewRandomExcuse;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 - (IBAction)btnNewExcuse:(id)sender;
 
 @end

@@ -29,13 +29,19 @@
     self.viewRandomExcuse.layer.cornerRadius = 25;
     
     [self GetRandomExcuse];
+    
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-9150360740164586/4668671754";
+    self.bannerView.rootViewController = self;
+    
+    // Testing ads on device here comment out after testing
+//    GADRequest *request = [GADRequest request];
+//    request.testDevices = @[ @"557a4c728b9860e5e386b606af0ca46a" ];
+//    [self.bannerView loadRequest:request];
+    
+    // uncomment after testing
+    [self.bannerView loadRequest:[GADRequest request]];
 }
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
-}
-
 
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     
