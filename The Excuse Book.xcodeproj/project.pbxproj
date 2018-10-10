@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB32ECB8ABDAD0EDEB182E9 /* libPods-The Excuse BookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AEEFEB0CBEEF01A5F37DF7 /* libPods-The Excuse BookTests.a */; };
+		18E842D196A5066772FAB24C /* libPods-The Excuse Book.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E3B513BDD71513C4C67D02 /* libPods-The Excuse Book.a */; };
+		2640279F1F4FB7E600E75F3C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2640279E1F4FB7E600E75F3C /* libsqlite3.dylib */; };
+		264027A11F4FBA4100E75F3C /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 264027A01F4FBA4100E75F3C /* libz.1.dylib */; };
 		2647727E1AF2F4D200E92EB9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2647727D1AF2F4D200E92EB9 /* Media.xcassets */; };
 		265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A61AEDB2750058CCCA /* MessageUI.framework */; };
 		265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265923A81AEDB2920058CCCA /* QuartzCore.framework */; };
@@ -14,7 +18,6 @@
 		265923B21AEDCFCE0058CCCA /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923AF1AEDCFCE0058CCCA /* WYPopoverController.m */; };
 		265923B31AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */; };
 		265923B61AEDD1220058CCCA /* SwitchSportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265923B51AEDD1220058CCCA /* SwitchSportView.m */; };
-		26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */; };
 		26A693C81AF83D7200D19561 /* excuse_book_database.db in Resources */ = {isa = PBXBuildFile; fileRef = 26A693C71AF83D7200D19561 /* excuse_book_database.db */; };
 		26DA4ADB1AE3EF8A009F4229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADA1AE3EF8A009F4229 /* main.m */; };
 		26DA4ADE1AE3EF8A009F4229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4ADD1AE3EF8A009F4229 /* AppDelegate.m */; };
@@ -22,7 +25,6 @@
 		26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE21AE3EF8A009F4229 /* Main.storyboard */; };
 		26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE51AE3EF8A009F4229 /* Images.xcassets */; };
 		26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */; };
-		26DA4AF51AE3EF8A009F4229 /* The_Excuse_BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA4AF41AE3EF8A009F4229 /* The_Excuse_BookTests.m */; };
 		26EFCF371AEC1FE400992828 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF361AEC1FE400992828 /* DBManager.m */; };
 		26EFCF3A1AEC216A00992828 /* DefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF391AEC216A00992828 /* DefaultModel.m */; };
 		26EFCF3D1AEC218300992828 /* ExcuseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3C1AEC218300992828 /* ExcuseModel.m */; };
@@ -30,7 +32,6 @@
 		26EFCF431AEC21A900992828 /* DefaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF421AEC21A900992828 /* DefaultController.m */; };
 		26EFCF461AEC21B800992828 /* Excuse Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF451AEC21B800992828 /* Excuse Controller.m */; };
 		26EFCF491AEC22AF00992828 /* ShowExcuseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF481AEC22AF00992828 /* ShowExcuseView.m */; };
-		6F911D88FA0EF78C0C42EDB9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB86CE45D3BB70C26722EC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		022FE8AEA68300A4AE014CCB /* Pods-The Excuse Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Excuse Book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Excuse Book/Pods-The Excuse Book.debug.xcconfig"; sourceTree = "<group>"; };
+		2640279A1F4FB72500E75F3C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2640279C1F4FB73D00E75F3C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2640279E1F4FB7E600E75F3C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		264027A01F4FBA4100E75F3C /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		2647727A1AF2E90200E92EB9 /* The Excuse Book.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "The Excuse Book.entitlements"; sourceTree = "<group>"; };
 		2647727D1AF2F4D200E92EB9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2652A0A41AF1BE2400C68481 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
@@ -69,7 +75,6 @@
 		265923B11AEDCFCE0058CCCA /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		265923B41AEDD1220058CCCA /* SwitchSportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchSportView.h; sourceTree = "<group>"; };
 		265923B51AEDD1220058CCCA /* SwitchSportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchSportView.m; sourceTree = "<group>"; };
-		26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		26A693C71AF83D7200D19561 /* excuse_book_database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = excuse_book_database.db; sourceTree = "<group>"; };
 		26DA4AD51AE3EF8A009F4229 /* The Excuse Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Excuse Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA4AD91AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,8 +87,6 @@
 		26DA4AE51AE3EF8A009F4229 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26DA4AE81AE3EF8A009F4229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26DA4AEE1AE3EF8A009F4229 /* The Excuse BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Excuse BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26DA4AF31AE3EF8A009F4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26DA4AF41AE3EF8A009F4229 /* The_Excuse_BookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Excuse_BookTests.m; sourceTree = "<group>"; };
 		26EFCF351AEC1FE400992828 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		26EFCF361AEC1FE400992828 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		26EFCF381AEC216A00992828 /* DefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultModel.h; sourceTree = "<group>"; };
@@ -98,9 +101,11 @@
 		26EFCF451AEC21B800992828 /* Excuse Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Excuse Controller.m"; sourceTree = "<group>"; };
 		26EFCF471AEC22AF00992828 /* ShowExcuseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowExcuseView.h; sourceTree = "<group>"; };
 		26EFCF481AEC22AF00992828 /* ShowExcuseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowExcuseView.m; sourceTree = "<group>"; };
-		38DB86CE45D3BB70C26722EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EF613435E84D2871D642CB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C8513B7042C793A8361C8F39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		35E3B513BDD71513C4C67D02 /* libPods-The Excuse Book.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Excuse Book.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DA9F917DC1308731AC006D /* Pods-The Excuse BookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Excuse BookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Excuse BookTests/Pods-The Excuse BookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76AEEFEB0CBEEF01A5F37DF7 /* libPods-The Excuse BookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Excuse BookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF036C1942667314F12ECB98 /* Pods-The Excuse Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Excuse Book.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Excuse Book/Pods-The Excuse Book.release.xcconfig"; sourceTree = "<group>"; };
+		FF4D689ECAB7CAF52E803B67 /* Pods-The Excuse BookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Excuse BookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Excuse BookTests/Pods-The Excuse BookTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264027A11F4FBA4100E75F3C /* libz.1.dylib in Frameworks */,
+				2640279F1F4FB7E600E75F3C /* libsqlite3.dylib in Frameworks */,
 				265923AB1AEDB2A10058CCCA /* Social.framework in Frameworks */,
 				265923A91AEDB2920058CCCA /* QuartzCore.framework in Frameworks */,
 				265923A71AEDB2750058CCCA /* MessageUI.framework in Frameworks */,
-				26A67C151AEBF7E800A3C350 /* libsqlite3.dylib in Frameworks */,
-				6F911D88FA0EF78C0C42EDB9 /* libPods.a in Frameworks */,
+				18E842D196A5066772FAB24C /* libPods-The Excuse Book.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +126,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB32ECB8ABDAD0EDEB182E9 /* libPods-The Excuse BookTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1804B55AB50AC2631308BF50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				022FE8AEA68300A4AE014CCB /* Pods-The Excuse Book.debug.xcconfig */,
+				BF036C1942667314F12ECB98 /* Pods-The Excuse Book.release.xcconfig */,
+				60DA9F917DC1308731AC006D /* Pods-The Excuse BookTests.debug.xcconfig */,
+				FF4D689ECAB7CAF52E803B67 /* Pods-The Excuse BookTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		26DA4ACC1AE3EF8A009F4229 = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +152,10 @@
 				265923AA1AEDB2A10058CCCA /* Social.framework */,
 				265923A81AEDB2920058CCCA /* QuartzCore.framework */,
 				265923A61AEDB2750058CCCA /* MessageUI.framework */,
-				26A67C141AEBF7E800A3C350 /* libsqlite3.dylib */,
 				26DA4AD71AE3EF8A009F4229 /* The Excuse Book */,
-				26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */,
 				26DA4AD61AE3EF8A009F4229 /* Products */,
-				81EF8323CFD1A9D22E011C57 /* Pods */,
-				658CD73B76D30ACD35E36D66 /* Frameworks */,
+				1804B55AB50AC2631308BF50 /* Pods */,
+				4C5B55DB4ADF9182F084AAA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,23 +179,6 @@
 				26EFCF301AEC1EFE00992828 /* Supporting Files */,
 			);
 			path = "The Excuse Book";
-			sourceTree = "<group>";
-		};
-		26DA4AF11AE3EF8A009F4229 /* The Excuse BookTests */ = {
-			isa = PBXGroup;
-			children = (
-				26DA4AF41AE3EF8A009F4229 /* The_Excuse_BookTests.m */,
-				26DA4AF21AE3EF8A009F4229 /* Supporting Files */,
-			);
-			path = "The Excuse BookTests";
-			sourceTree = "<group>";
-		};
-		26DA4AF21AE3EF8A009F4229 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				26DA4AF31AE3EF8A009F4229 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		26EFCF301AEC1EFE00992828 /* Supporting Files */ = {
@@ -247,21 +246,17 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		658CD73B76D30ACD35E36D66 /* Frameworks */ = {
+		4C5B55DB4ADF9182F084AAA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38DB86CE45D3BB70C26722EC /* libPods.a */,
+				264027A01F4FBA4100E75F3C /* libz.1.dylib */,
+				2640279E1F4FB7E600E75F3C /* libsqlite3.dylib */,
+				2640279C1F4FB73D00E75F3C /* libsqlite3.tbd */,
+				2640279A1F4FB72500E75F3C /* libsqlite3.0.tbd */,
+				35E3B513BDD71513C4C67D02 /* libPods-The Excuse Book.a */,
+				76AEEFEB0CBEEF01A5F37DF7 /* libPods-The Excuse BookTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		81EF8323CFD1A9D22E011C57 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C8513B7042C793A8361C8F39 /* Pods.debug.xcconfig */,
-				5EF613435E84D2871D642CB7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,12 +266,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DA4AF81AE3EF8A009F4229 /* Build configuration list for PBXNativeTarget "The Excuse Book" */;
 			buildPhases = (
-				CC1AB5EC23C33D180A3955DE /* Check Pods Manifest.lock */,
+				B705C4A5F9137A0132BC7598 /* [CP] Check Pods Manifest.lock */,
 				26DA4AD11AE3EF8A009F4229 /* Sources */,
 				26DA4AD21AE3EF8A009F4229 /* Frameworks */,
 				26DA4AD31AE3EF8A009F4229 /* Resources */,
 				268DDABF1AE3F12700948E93 /* Embed App Extensions */,
-				817B4887B1542BDF8691E8B6 /* Copy Pods Resources */,
+				7A939A7222BF4762FDD7D30D /* [CP] Embed Pods Frameworks */,
+				4C5DC5388759BBAD5130BF02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DA4AFB1AE3EF8A009F4229 /* Build configuration list for PBXNativeTarget "The Excuse BookTests" */;
 			buildPhases = (
+				1E12BA1CA7784AB1AD280E87 /* [CP] Check Pods Manifest.lock */,
 				26DA4AEA1AE3EF8A009F4229 /* Sources */,
 				26DA4AEB1AE3EF8A009F4229 /* Frameworks */,
 				26DA4AEC1AE3EF8A009F4229 /* Resources */,
+				6FCB7FBF95DEB717C666508A /* [CP] Embed Pods Frameworks */,
+				90F146B7813A9C4A64D3B66E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,12 +310,13 @@
 		26DA4ACD1AE3EF8A009F4229 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "SingleCog Software";
 				TargetAttributes = {
 					26DA4AD41AE3EF8A009F4229 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 5LME3793K2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -371,34 +371,100 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		817B4887B1542BDF8691E8B6 /* Copy Pods Resources */ = {
+		1E12BA1CA7784AB1AD280E87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Excuse BookTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC1AB5EC23C33D180A3955DE /* Check Pods Manifest.lock */ = {
+		4C5DC5388759BBAD5130BF02 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Excuse Book/Pods-The Excuse Book-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCB7FBF95DEB717C666508A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Excuse BookTests/Pods-The Excuse BookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A939A7222BF4762FDD7D30D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Excuse Book/Pods-The Excuse Book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F146B7813A9C4A64D3B66E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Excuse BookTests/Pods-The Excuse BookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B705C4A5F9137A0132BC7598 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Excuse Book-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -428,7 +494,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DA4AF51AE3EF8A009F4229 /* The_Excuse_BookTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,19 +535,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -498,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -514,13 +590,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -536,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -546,36 +632,47 @@
 		};
 		26DA4AF91AE3EF8A009F4229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8513B7042C793A8361C8F39 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 022FE8AEA68300A4AE014CCB /* Pods-The Excuse Book.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LME3793K2;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "The Excuse Book/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SingleCogSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		26DA4AFA1AE3EF8A009F4229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EF613435E84D2871D642CB7 /* Pods.release.xcconfig */;
+			baseConfigurationReference = BF036C1942667314F12ECB98 /* Pods-The Excuse Book.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LME3793K2;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "The Excuse Book/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SingleCogSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 		26DA4AFC1AE3EF8A009F4229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60DA9F917DC1308731AC006D /* Pods-The Excuse BookTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -588,6 +685,7 @@
 				);
 				INFOPLIST_FILE = "The Excuse BookTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SingleCogSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Excuse Book.app/The Excuse Book";
 			};
@@ -595,6 +693,7 @@
 		};
 		26DA4AFD1AE3EF8A009F4229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4D689ECAB7CAF52E803B67 /* Pods-The Excuse BookTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -603,6 +702,7 @@
 				);
 				INFOPLIST_FILE = "The Excuse BookTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SingleCogSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Excuse Book.app/The Excuse Book";
 			};

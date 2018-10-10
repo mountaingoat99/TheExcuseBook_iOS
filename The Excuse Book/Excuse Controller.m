@@ -21,7 +21,7 @@
     NSUInteger r = arc4random() % [excuses count];
     
     NSString *numId = [[excuses objectAtIndex:r] objectAtIndex:0];
-    NSLog(@"Random Int was%d", r);
+    NSLog(@"Random Int was%lu", (unsigned long)r);
     NSLog(@"Random ExcuseID was%@", numId);
     
     return [excuse GetExcuseName:numId];
