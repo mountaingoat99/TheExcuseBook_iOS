@@ -192,12 +192,20 @@
     DefaultController *defaultSport = [[DefaultController alloc] init];
     
     if (![defaultSport AddNewSport:self.NewSportName]) {
-        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Hold On!"
-                                                        message:@"Sport did not get entered, please try again"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [error show];
+        UIAlertController *error = [UIAlertController
+                                    alertControllerWithTitle:@"Hold On!"
+                                    message:@"Sport did not get entered, please try again"
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *error){
+                                       NSLog(@"Ok Action");
+                                   }];
+        
+        [error addAction:okAction];
+        [self presentViewController:error animated:YES completion:nil];
         [error reloadInputViews];
     } else {
         [self CheckDefaultSport];
@@ -248,32 +256,44 @@
 }
 
 -(void)AddNewExcuse {
-    
     Excuse_Controller *excuse = [[Excuse_Controller alloc] init];
-    
     if (![excuse AddExcuse:self.defaultSportID ExcuseName:self.NewExcuseName]) {
-        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Hold On!"
-                                                        message:@"Sport did not get entered, please try again"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [error show];
+        UIAlertController *error = [UIAlertController
+                                    alertControllerWithTitle:@"Hold On!"
+                                    message:@"Excuse did not get entered, please try again"
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *error){
+                                       NSLog(@"Ok Action");
+                                   }];
+        
+        [error addAction:okAction];
+        [self presentViewController:error animated:YES completion:nil];
         [error reloadInputViews];
     } else {
-        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Awesome"
-                                                        message:@"New Excuse Added!"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [error show];
-        [error reloadInputViews];
+        UIAlertController *success = [UIAlertController
+                                    alertControllerWithTitle:@"Awesome"
+                                    message:@"New Excuse Added!"
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *success){
+                                       NSLog(@"Ok Action");
+                                   }];
+        
+        [success addAction:okAction];
+        [self presentViewController:success animated:YES completion:nil];
+        [success reloadInputViews];
     }
 }
 
 -(void)PresentSportsChoice {
-    
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        
         UIStoryboard *sboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         SwitchSportView *switchDiver = [sboard instantiateViewControllerWithIdentifier:@"SwitchSportView"];
         
@@ -285,18 +305,19 @@
         switchDiver.defaultSportID = self.defaultSportID;
         switchDiver.controller = popoverController;
         [popoverController presentPopoverFromRect:rect inView:self.view permittedArrowDirections:WYPopoverArrowDirectionNone animated:YES];
-        
     } else {
-        
         UIStoryboard *sboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        SwitchSportView *switchDiver = [sboard instantiateViewControllerWithIdentifier:@"SwitchSportView"];
+        SwitchSportView *switchSport = [sboard instantiateViewControllerWithIdentifier:@"SwitchSportView"];
         
-        popoverContr = [[UIPopoverController alloc] initWithContentViewController:switchDiver];
-        popoverContr.popoverContentSize = CGSizeMake(400, 400);
-        CGRect rect = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 1, 1);
-        switchDiver.delegate = self;
-        switchDiver.defaultSportID = self.defaultSportID;
-        [popoverContr presentPopoverFromRect:rect inView:self.view permittedArrowDirections:0 animated:YES];
+        switchSport.delegate = self;
+        switchSport.defaultSportID = self.defaultSportID;
+        switchSport.preferredContentSize = CGSizeMake(400, 400);
+        switchSport.popoverPresentationController.sourceView = self.view;
+        switchSport.popoverPresentationController.sourceRect = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 1, 1);
+        switchSport.popoverPresentationController.permittedArrowDirections = 0;
+        popoverContr = [switchSport popoverPresentationController];
+        popoverContr.delegate = self;
+        [self presentViewController:switchSport animated:YES completion:nil];
     }
 }
 
@@ -407,39 +428,57 @@
 }
 
 -(void)canceledEmail {
+    UIAlertController *error = [UIAlertController
+                                alertControllerWithTitle:@"Email Cancelled"
+                                message:@""
+                                preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Email Cancelled"
-                                                    message:@""
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [error show];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *error){
+                                   NSLog(@"Ok Action");
+                               }];
+    
+    [error addAction:okAction];
+    [self presentViewController:error animated:YES completion:nil];
     [error reloadInputViews];
-    
 }
 
 -(void)SentEmail {
+    UIAlertController *error = [UIAlertController
+                                alertControllerWithTitle:@"Email Sent"
+                                message:@""
+                                preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Email Sent"
-                                                    message:@""
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [error show];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *error){
+                                   NSLog(@"Ok Action");
+                               }];
+    
+    [error addAction:okAction];
+    [self presentViewController:error animated:YES completion:nil];
     [error reloadInputViews];
-    
 }
 
 -(void)FailedEmail {
+    UIAlertController *error = [UIAlertController
+                                alertControllerWithTitle:@"Email Failed"
+                                message:@""
+                                preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Email Failed"
-                                                    message:@""
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [error show];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *error){
+                                   NSLog(@"Ok Action");
+                               }];
+    
+    [error addAction:okAction];
+    [self presentViewController:error animated:YES completion:nil];
     [error reloadInputViews];
-    
 }
 
 @end

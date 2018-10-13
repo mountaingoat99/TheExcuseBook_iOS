@@ -25,6 +25,7 @@
 		26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE21AE3EF8A009F4229 /* Main.storyboard */; };
 		26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE51AE3EF8A009F4229 /* Images.xcassets */; };
 		26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DA4AE71AE3EF8A009F4229 /* LaunchScreen.xib */; };
+		26E307C82172A09200633958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E307C72172A09100633958 /* Assets.xcassets */; };
 		26EFCF371AEC1FE400992828 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF361AEC1FE400992828 /* DBManager.m */; };
 		26EFCF3A1AEC216A00992828 /* DefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF391AEC216A00992828 /* DefaultModel.m */; };
 		26EFCF3D1AEC218300992828 /* ExcuseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCF3C1AEC218300992828 /* ExcuseModel.m */; };
@@ -87,6 +88,7 @@
 		26DA4AE51AE3EF8A009F4229 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26DA4AE81AE3EF8A009F4229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26DA4AEE1AE3EF8A009F4229 /* The Excuse BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Excuse BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E307C72172A09100633958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
 		26EFCF351AEC1FE400992828 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		26EFCF361AEC1FE400992828 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		26EFCF381AEC216A00992828 /* DefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultModel.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		26EFCF321AEC1F3C00992828 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				26E307C72172A09100633958 /* Assets.xcassets */,
 				2647727D1AF2F4D200E92EB9 /* Media.xcassets */,
 				26DA4AE21AE3EF8A009F4229 /* Main.storyboard */,
 				26DA4AE51AE3EF8A009F4229 /* Images.xcassets */,
@@ -357,6 +360,7 @@
 				2647727E1AF2F4D200E92EB9 /* Media.xcassets in Resources */,
 				26DA4AE41AE3EF8A009F4229 /* Main.storyboard in Resources */,
 				26DA4AE91AE3EF8A009F4229 /* LaunchScreen.xib in Resources */,
+				26E307C82172A09200633958 /* Assets.xcassets in Resources */,
 				26DA4AE61AE3EF8A009F4229 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

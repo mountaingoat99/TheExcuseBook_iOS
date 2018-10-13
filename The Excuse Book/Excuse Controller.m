@@ -28,11 +28,11 @@
 }
 
 -(BOOL)AddExcuse:(NSString*)sportID ExcuseName:(NSString*)excuseName {
-    
+    if ([excuseName isEqualToString:@""]) {
+        return FALSE;
+    }
     ExcuseModel *excuse = [[ExcuseModel alloc] init];
-    
-    return [excuse AddNewExcuse:excuseName SportID:sportID];
-    
+    return [excuse AddNewExcuse:excuseName SportID:sportID];    
 }
 
 @end

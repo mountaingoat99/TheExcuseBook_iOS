@@ -12,11 +12,11 @@
 
 @import GoogleMobileAds;
 
-@interface ExcuseMeView : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate, SwitchSportDelegate>
+@interface ExcuseMeView : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate, SwitchSportDelegate, UIPopoverPresentationControllerDelegate>
 
 @property (nonatomic, strong) NSString *defaultSportID;
 //popover
-@property (nonatomic, retain) UIPopoverController *popoverContr;
+@property (strong, nonatomic) UIPopoverPresentationController *popoverContr;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDefaultSportName;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;

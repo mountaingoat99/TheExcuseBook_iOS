@@ -29,11 +29,11 @@
 }
 
 -(BOOL)AddNewSport:(NSString*)sportName {
-    
+    if ([sportName isEqualToString:@""]) {
+        return FALSE;
+    }
     SportsModel *sport = [[SportsModel alloc] init];
-    
     return [sport AddNewSport:sportName];
-    
 }
 
 -(void)UpdateDefaultSport:(NSString*)sportID {
